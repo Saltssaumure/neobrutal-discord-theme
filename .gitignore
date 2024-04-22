@@ -1,0 +1,10 @@
+# Packages
+/node_modules
+
+# Build
+/bundle
+/dist
+/src
+
+# Social images
+/preview
