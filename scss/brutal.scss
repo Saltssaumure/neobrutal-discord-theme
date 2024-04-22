@@ -1,6 +1,8 @@
-$white: #fff;
-$black: #000;
+@use "./vars" as *;
 
+@forward "./main/";
+
+@import url("https://minidiscordthemes.github.io/Squared/sq.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 @font-face {
@@ -28,6 +30,11 @@ $black: #000;
     --background-secondary-alt: #{$white};
 
     --text-normal: #{$black};
+    --embed-title: #{$black};
+    --channels-default: #{$black};
+    --header-primary: #{$black};
+    --channel-icon: #{$black};
+
     --font-primary: HelveticaNeueLT, Helvetica, Arial, sans-serif;
     --font-display: HelveticaNeueLT, Helvetica, Arial, sans-serif;
 }
