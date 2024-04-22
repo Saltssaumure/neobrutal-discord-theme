@@ -1,0 +1,19 @@
+@use "../vars" as *;
+
+.container__26baa {
+    --interactive-normal: #{$black};
+    --interactive-hover: #{$black};
+}
+
+// Remove shadow
+.content__01e65::before {
+    display: none;
+}
+.header__77c95 {
+    box-shadow: none;
+}
+
+// Channel header dropdown button
+.button__84b6b {
+    opacity: 1;
+}

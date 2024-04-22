@@ -1,0 +1,25 @@
+@use "../vars" as *;
+
+.wrapper__216eb {
+    background: none;
+    justify-content: center;
+}
+
+.tree__7a511 {
+    height: 80vh;
+    background: $black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    --green-360: #{$black};
+}
+
+// Make everything square-ish
+.svg__34dd4,
+body #app-mount .guilds__2b93a .expandedFolderBackground_b1385f {
+    border-radius: 4px;
+}
+
+.blobContainer_c44493,
+.guildIcon_b6bfa7 {
+    filter: grayscale(1);
+}
