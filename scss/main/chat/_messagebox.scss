@@ -2,6 +2,10 @@
 
 // Message box
 .form_d8a4a1 {
+    &::before, &::after {
+        display: none;
+    }
+
     @at-root .channelTextArea_c2094b {
         @at-root .themedBackground__3a4c0 {
             background: $black;

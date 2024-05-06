@@ -37,20 +37,20 @@
         @at-root .toolbar__62fb5 {
             justify-content: space-around;
 
-            // Icon outmost container
-            > * {
-                flex: 1 0 auto;
-            }
-
-            // Icon and label container
+            // Outmost containers
+            > *,
             .iconWrapper_de6cd1 {
+                flex: 1 0 auto;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 8px;
                 margin: 0;
                 height: 36px;
+            }
 
+            // Icon and label container
+            .iconWrapper_de6cd1 {
                 &:hover {
                     background: $white;
                     color: $black;
@@ -72,24 +72,10 @@
                 }
             }
 
-            // Move searchbar to channels list
+            // Search bar
+            // For alternative placement, see themesettings/_search
             @at-root .search__07df0 {
-                position: fixed;
-                top: 0;
-                margin: 0;
-                left: $serverlist-width;
-                width: $channellist-width;
-                height: $searchbar-height;
-                background: $black;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                @at-root .searchBar__5a20a {
-                    width: $channellist-width;
-                    max-width: $channellist-width;
-                }
+                order: 1;
             }
 
             // Remove help button
