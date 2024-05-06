@@ -1,0 +1,28 @@
+@use "../../vars" as *;
+
+.theme-dark {
+    --modeindicator-text: "Dark mode";
+}
+.theme-light {
+    --modeindicator-text: "Light mode";
+}
+
+.titleBar__710b0::after {
+    content: var(--modeindicator-text);
+    font-family: var(--font-primary);
+    text-align: center;
+    font-size: 16px;
+
+    position: fixed;
+    top: 0;
+    left: calc($serverlist-width + ($channellist-width / 2));
+    width: calc($channellist-width / 2);
+    height: 36px;
+    box-sizing: border-box;
+    line-height: 1.6rem;
+
+    border: solid $black;
+    border-width: $border-width 0;
+    background: var(--background-tertiary);
+    color: var(--text-muted);
+}

@@ -1,14 +1,12 @@
+@use "../../vars" as *;
+// Titlebar
 .withFrame__5e49e {
     height: 0;
     margin-top: 0;
 
-    // Wordmark
-    .wordmark__5b8c9 {
-        display: none;
-    }
-
     // Windows control buttons
     .winButton_f17fb6 {
         top: 0;
+        border: $border-width solid $black;
     }
 }
