@@ -1,11 +1,10 @@
-$white: #fff;
-$black: #000;
-$accent: rgb(157, 100, 223);
+$black: var(--neobrutal-color-1);
+$white: var(--neobrutal-color-2);
+$accent: var(--neobrutal-color-accent);
+
 $root: ".appMount_c99875";
 
 $border-width: 5px;
-
 $serverlist-width: 84px;
 $channellist-width: 240px;
-
 $searchbar-height: 36px;

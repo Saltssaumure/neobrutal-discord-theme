@@ -1,40 +1,8 @@
 @use "./vars" as *;
 
+@forward "./themesettings/";
+
 @forward "./main/";
-
-@import url("https://minidiscordthemes.github.io/Squared/sq.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-@font-face {
-    font-family: HelveticaNeueLT;
-    src: url("https://saltssaumure.github.io/neobrutal-discord-theme/assets/font/HelveticaNeueLT-Std-Md.otf") format("opentype");
-    font-display: swap;
-}
-@font-face {
-    font-family: HelveticaNeueLT;
-    font-weight: 700;
-    src: url("https://saltssaumure.github.io/neobrutal-discord-theme/assets/font/HelveticaNeueLT-Std-Bd.otf") format("woff");
-    font-display: swap;
-}
-@font-face {
-    font-family: HelveticaNeueLT;
-    font-weight: 800;
-    src: url("https://saltssaumure.github.io/neobrutal-discord-theme/assets/font/HelveticaNeueLT-Std-Hv.otf") format("woff");
-    font-display: swap;
-}
-
-:root {
-    --background-primary: #{$white};
-    --background-secondary: #{$white};
-    --background-tertiary: #{$white};
-    --background-secondary-alt: #{$white};
-
-    --text-normal: #{$black};
-    --embed-title: #{$black};
-    --channels-default: #{$black};
-    --header-primary: #{$black};
-    --channel-icon: #{$black};
-
-    --font-primary: HelveticaNeueLT, Helvetica, Arial, sans-serif;
-    --font-display: HelveticaNeueLT, Helvetica, Arial, sans-serif;
-}
+@forward "./mod";
+@forward "./part";
+@forward "./plugin";
