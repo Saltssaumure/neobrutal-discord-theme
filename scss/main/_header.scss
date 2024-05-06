@@ -1,8 +1,87 @@
 @use "../vars" as *;
 
+// Header bar
 .container__26baa {
-    --interactive-normal: #{$black};
-    --interactive-hover: #{$black};
+    --interactive-normal: #{$white};
+    --interactive-hover: #{$white};
+    --channel-icon: #{$white};
+    --background-primary: #{$black};
+    --text-normal: #{$white};
+
+    // Channel name
+    .defaultColor__8610e {
+        color: #{$white};
+    }
+
+    @at-root .upperContainer__57565 {
+        flex-direction: column;
+        gap: 8px;
+
+        // Channel name and description
+        @at-root .children_cde9af {
+            @at-root .divider_bdb894 {
+                width: 2px;
+                background: $white;
+            }
+        }
+
+        // Toolbar
+        @at-root .toolbar__62fb5 {
+            justify-content: space-around;
+
+            // Icon outmost container
+            > * {
+                flex: 1 0 auto;
+            }
+
+            // Icon and label container
+            .iconWrapper_de6cd1 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                margin: 0;
+                height: 36px;
+
+                &:hover {
+                    background: $white;
+                    color: $black;
+                    --interactive-hover: #{$black};
+                }
+
+                // Display icon label
+                &::after {
+                    content: attr(aria-label);
+                }
+
+                // New message indicator
+                .iconBadge__20a6b {
+                    display: none;
+                }
+                &:has(.iconBadge__20a6b) {
+                    text-decoration: underline $accent wavy 2px;
+                    text-decoration-skip-ink: none;
+                }
+            }
+
+            // Move searchbar to channels list
+            @at-root .search__07df0 {
+                position: fixed;
+                top: 8px;
+                left: $serverlist-width;
+
+                @at-root .searchBar__5a20a {
+                    width: $channellist-width - 16px;
+                    max-width: $channellist-width - 16px;
+                }
+            }
+
+            // Remove help button
+            .anchor_c8ddc0 {
+                display: none;
+            }
+        }
+    }
 }
 
 // Remove shadow
