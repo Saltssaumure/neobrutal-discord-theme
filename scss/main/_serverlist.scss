@@ -3,25 +3,62 @@
 // Server list
 .wrapper__216eb {
     background: none;
-    justify-content: center;
+    justify-content: flex-end;
+    width: $serverlist-width;
 
     @at-root .tree__7a511 {
-        height: 80vh;
+        height: calc(100% - $serverlist-width);
         background: $black;
-        padding-top: 12px;
-        padding-bottom: 12px;
+        box-sizing: border-box;
+        padding-bottom: 16px;
+        align-items: center;
         --green-360: #{$black};
 
-        // Make everything square-ish
-        @at-root .svg__34dd4,
-            body #app-mount .guilds__2b93a .expandedFolderBackground_b1385f {
-            border-radius: 4px;
-        }
+        // Scroller
+        @at-root :is(.platform-win, .platform-osx) .scroller_de945b {
+            padding-top: 0;
 
-        // Make channel icons grey
-        @at-root .blobContainer_c44493,
-            .guildIcon_b6bfa7 {
-            filter: grayscale(1);
+            // DMs (Discord icon)
+            @at-root .tutorialContainer_b06ae6 {
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: $black;
+
+                // Icon / pill wrapper
+                .listItem__48528 {
+                    width: $serverlist-width;
+                    height: $serverlist-width;
+
+                    // Icon outmost wrapper
+                    .listItemWrapper__3d465 {
+                        display: flex;
+                        align-items: center;
+
+                        @at-root .wrapper__8436d {
+                            // Icon innermost wrapper
+                            .childWrapper_a6ce15 {
+                                color: $white;
+                                svg {
+                                    zoom: 1.7;
+                                }
+                            }
+                            &:is(:hover, .selected_ae80f7) .childWrapper_a6ce15 {
+                                color: $accent;
+                                background: unset;
+                            }
+                            .childWrapperNoHoverBg__7e8f1 {
+                                background: unset;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Hide DMs and servers separator if no DMs
+            .tutorialContainer_b06ae6 + .listItem__48528:has(.guildSeparator__75928) {
+                display: none;
+            }
         }
     }
 }

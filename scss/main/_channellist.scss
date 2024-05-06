@@ -1,0 +1,13 @@
+@use "../vars" as *;
+
+// Channel list
+.sidebar_e031be {
+    // Move from top to give space for searchbar
+    margin-top: $searchbar-height;
+
+    // Header
+    @at-root .header__77c95 {
+        background: $black;
+        --header-primary: #{$white};
+    }
+}

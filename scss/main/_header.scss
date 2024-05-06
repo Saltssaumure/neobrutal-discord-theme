@@ -8,6 +8,14 @@
     --background-primary: #{$black};
     --text-normal: #{$white};
 
+    // Drag locations
+    -webkit-app-region: drag;
+    // Toolbar, channel description
+    .toolbar__62fb5,
+    .topic__16ae3 {
+        -webkit-app-region: no-drag;
+    }
+
     // Channel name
     .defaultColor__8610e {
         color: #{$white};
@@ -67,12 +75,20 @@
             // Move searchbar to channels list
             @at-root .search__07df0 {
                 position: fixed;
-                top: 8px;
+                top: 0;
+                margin: 0;
                 left: $serverlist-width;
+                width: $channellist-width;
+                height: $searchbar-height;
+                background: $black;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
                 @at-root .searchBar__5a20a {
-                    width: $channellist-width - 16px;
-                    max-width: $channellist-width - 16px;
+                    width: $channellist-width;
+                    max-width: $channellist-width;
                 }
             }
 
