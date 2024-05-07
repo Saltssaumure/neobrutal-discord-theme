@@ -36,6 +36,7 @@
         // Toolbar
         @at-root .toolbar__62fb5 {
             justify-content: space-around;
+            container-type: inline-size;
 
             // Outmost containers
             > *,
@@ -58,8 +59,10 @@
                 }
 
                 // Display icon label
-                &::after {
-                    content: attr(aria-label);
+                @container (min-width: 1000px) {
+                    &::after {
+                        content: attr(aria-label);
+                    }
                 }
 
                 // New message indicator
