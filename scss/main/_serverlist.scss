@@ -6,6 +6,8 @@
     justify-content: flex-end;
     width: $serverlist-width;
 
+    --custom-list-items-list-item-width: #{$serverlist-width};
+
     @at-root .tree__7a511 {
         height: calc(100% - $serverlist-width);
         background: $black;
@@ -15,8 +17,10 @@
         --green-360: #{$black};
 
         // Scroller
-        @at-root :is(.platform-win, .platform-osx) .scroller_de945b {
-            padding-top: 0;
+        @at-root .scroller_de945b {
+            :is(.platform-win, .platform-osx) & {
+                padding-top: 0;
+            }
 
             // DMs (Discord icon)
             @at-root .tutorialContainer_b06ae6 {
@@ -56,8 +60,44 @@
             }
 
             // Hide DMs and servers separator if no DMs
-            .tutorialContainer_b06ae6 + .listItem__48528:has(.guildSeparator__75928) {
+            @at-root .tutorialContainer_b06ae6 + .listItem__48528:has(.guildSeparator__75928) {
                 display: none;
+            }
+
+            // Ping counter
+            .lowerBadge_e89e22 {
+                --status-danger: #{$accent};
+                // writing-mode: vertical-lr;
+                // top: 0;
+                // right: -8px;
+
+                // .numberBadge__40d6f {
+                //     height: 100%;
+                //     width: 8px!important;
+                //     min-width: 8px !important;
+                // }
+            }
+
+            // Server
+            @at-root .listItem__48528 {
+                @at-root .pill__6b31b {
+                    @at-root .item_f9d377 {
+                        background: $white;
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            // Server group container
+            @at-root .wrapper__832f2 {
+                width: $serverlist-width;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .expandedFolderBackground_b1385f {
+                    left: calc(($serverlist-width - 48px) / 2);
+                }
             }
         }
     }
