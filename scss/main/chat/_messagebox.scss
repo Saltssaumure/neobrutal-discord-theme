@@ -1,0 +1,38 @@
+@use "../../vars" as *;
+
+// Message box
+.form_d8a4a1 {
+    &::before,
+    &::after {
+        display: none;
+    }
+
+    @at-root .channelTextArea_c2094b {
+        @at-root .themedBackground__3a4c0 {
+            background: $black;
+            border: $border-width solid $black;
+            --interactive-normal: #{$white};
+            --interactive-hover: #{$white};
+            --interactive-active: #{$white};
+
+            // Upload button
+            .attachButton__5f6dc {
+            }
+
+            // Text area
+            @at-root .textArea_a86690 {
+                background: $white;
+                border: solid $black;
+                border-width: 0 $border-width;
+
+                @at-root .slateTextArea_b19976 {
+                    padding: 8px;
+                }
+            }
+
+            // Right side buttons
+            .buttons__7ecff {
+            }
+        }
+    }
+}

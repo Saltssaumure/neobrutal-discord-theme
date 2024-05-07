@@ -1,0 +1,41 @@
+@use "../../vars" as *;
+@use "../../mixins" as *;
+
+.wordmark__5b8c9 {
+    &::after {
+        @include channellist-topper($left: $serverlist-width);
+        // content: var(--modtitle-text);
+        content: "Discord";
+        font-family: var(--font-headline);
+        background: $accent;
+        color: $white;
+    }
+
+    > svg {
+        display: none;
+    }
+
+    pointer-events: unset;
+    padding: 0;
+}
+
+:root {
+    --modtitle-text: "Modified Discord";
+
+    &:has(#vencord-css-core) {
+        --modtitle-text: "Vencord";
+    }
+    &:has(#vcd-css-core) {
+        --modtitle-text: "Vesktop";
+    }
+    &:has(link[href^="replugged"]) {
+        --modtitle-text: "Replugged";
+    }
+    &:has(bd-body) {
+        --modtitle-text: "BetterDiscord";
+    }
+    &:has(script[src^="chrome-extension://cpojbkbhfkkljmlojagocnbmiaagkhkn"])
+    {
+        --modtitle-text: "Shelter";
+    }
+}

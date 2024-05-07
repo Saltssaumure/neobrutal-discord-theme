@@ -1,8 +1,106 @@
 @use "../vars" as *;
 
+// Header bar
 .container__26baa {
-    --interactive-normal: #{$black};
-    --interactive-hover: #{$black};
+    --interactive-normal: #{$white};
+    --interactive-hover: #{$white};
+    --channel-icon: #{$white};
+    --background-primary: #{$black};
+    --text-normal: #{$white};
+
+    // Drag locations
+    -webkit-app-region: drag;
+    // Toolbar, channel description, mask for windows controls
+    .toolbar__62fb5,
+    .topic__16ae3,
+    .platform-win &::after {
+        -webkit-app-region: no-drag;
+    }
+    .platform-win &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 38px * 3;
+        height: 32px;
+    }
+
+    // Channel name
+    .defaultColor__8610e {
+        color: #{$white};
+    }
+
+    @at-root .upperContainer__57565 {
+        flex-direction: column;
+        gap: 8px;
+
+        // Channel name and description
+        @at-root .children_cde9af {
+            @at-root .divider_bdb894 {
+                width: 2px;
+                background: $white;
+            }
+        }
+
+        // Toolbar
+        @at-root .toolbar__62fb5 {
+            justify-content: space-around;
+            container-type: inline-size;
+
+            // Outmost containers
+            > *,
+            .iconWrapper_de6cd1 {
+                flex: 1 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                margin: 0;
+                height: 36px;
+            }
+
+            // Icon and label container
+            .iconWrapper_de6cd1 {
+                &:hover {
+                    background: $white;
+                    color: $black;
+                    --interactive-hover: #{$black};
+                }
+
+                // Hide unavailable options
+                &:not(.clickable_ce0925) {
+                    display: none;
+                }
+
+                // Display icon label if enough space
+                @container (min-width: 1000px) {
+                    &::after {
+                        content: attr(aria-label);
+                    }
+                }
+
+                // New message indicator
+                .iconBadge__20a6b {
+                    display: none;
+                }
+                &:has(.iconBadge__20a6b) {
+                    text-decoration: underline $accent wavy 2px;
+                    text-decoration-skip-ink: none;
+                }
+            }
+
+            // Search bar
+            // For alternative placement, see themesettings/_search
+            @at-root .search__07df0 {
+                order: 1;
+            }
+
+            // Remove help button
+            .anchor_c8ddc0 {
+                display: none;
+            }
+        }
+    }
 }
 
 // Remove shadow

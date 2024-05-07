@@ -1,0 +1,21 @@
+@use "../vars" as *;
+
+// Alternative search bar placement above channel list
+.search__07df0 {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    left: $serverlist-width;
+    width: $channellist-width;
+    height: $searchbar-height;
+    background: $black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @at-root .searchBar__5a20a {
+        width: $channellist-width;
+        max-width: $channellist-width;
+    }
+}

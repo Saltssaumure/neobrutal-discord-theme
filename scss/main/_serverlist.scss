@@ -1,25 +1,104 @@
 @use "../vars" as *;
 
+// Server list
 .wrapper__216eb {
     background: none;
-    justify-content: center;
-}
+    justify-content: flex-end;
+    width: $serverlist-width;
 
-.tree__7a511 {
-    height: 80vh;
-    background: $black;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    --green-360: #{$black};
-}
+    --custom-list-items-list-item-width: #{$serverlist-width};
 
-// Make everything square-ish
-.svg__34dd4,
-body #app-mount .guilds__2b93a .expandedFolderBackground_b1385f {
-    border-radius: 4px;
-}
+    @at-root .tree__7a511 {
+        height: calc(100% - $serverlist-width);
+        background: $black;
+        box-sizing: border-box;
+        padding-bottom: 16px;
+        align-items: center;
+        --green-360: #{$black};
 
-.blobContainer_c44493,
-.guildIcon_b6bfa7 {
-    filter: grayscale(1);
+        // Scroller
+        @at-root .scroller_de945b {
+            :is(.platform-win, .platform-osx) & {
+                padding-top: 0;
+            }
+
+            // DMs (Discord icon)
+            @at-root .tutorialContainer_b06ae6 {
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: $black;
+
+                // Icon / pill wrapper
+                .listItem__48528 {
+                    width: $serverlist-width;
+                    height: $serverlist-width;
+
+                    // Icon outmost wrapper
+                    .listItemWrapper__3d465 {
+                        display: flex;
+                        align-items: center;
+
+                        @at-root .wrapper__8436d {
+                            // Icon innermost wrapper
+                            .childWrapper_a6ce15 {
+                                color: $white;
+                                svg {
+                                    zoom: 1.7;
+                                }
+                            }
+                            &:is(:hover, .selected_ae80f7) .childWrapper_a6ce15 {
+                                color: $accent;
+                                background: unset;
+                            }
+                            .childWrapperNoHoverBg__7e8f1 {
+                                background: unset;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Hide DMs and servers separator if no DMs
+            @at-root .tutorialContainer_b06ae6 + .listItem__48528:has(.guildSeparator__75928) {
+                display: none;
+            }
+
+            // Ping counter
+            .lowerBadge_e89e22 {
+                --status-danger: #{$accent};
+                // writing-mode: vertical-lr;
+                // top: 0;
+                // right: -8px;
+
+                // .numberBadge__40d6f {
+                //     height: 100%;
+                //     width: 8px!important;
+                //     min-width: 8px !important;
+                // }
+            }
+
+            // Server
+            @at-root .listItem__48528 {
+                @at-root .pill__6b31b {
+                    @at-root .item_f9d377 {
+                        background: $white;
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            // Server group container
+            @at-root .wrapper__832f2 {
+                width: $serverlist-width;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .expandedFolderBackground_b1385f {
+                    left: calc(($serverlist-width - 48px) / 2);
+                }
+            }
+        }
+    }
 }

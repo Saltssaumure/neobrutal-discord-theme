@@ -1,0 +1,17 @@
+@use "../../vars" as *;
+@use "../../mixins" as *;
+
+.theme-dark {
+    --modeindicator-text: "Dark mode";
+}
+.theme-light {
+    --modeindicator-text: "Light mode";
+}
+
+.titleBar__710b0::after {
+    @include channellist-topper($left: calc($serverlist-width + ($channellist-width / 2)));
+    content: var(--modeindicator-text);
+    font-family: var(--font-primary);
+    background: var(--background-tertiary);
+    color: var(--text-muted);
+}
