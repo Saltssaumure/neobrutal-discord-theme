@@ -1,0 +1,3 @@
+Conversion from png to avif done via Krita
+- 420 chroma
+- 80% quality

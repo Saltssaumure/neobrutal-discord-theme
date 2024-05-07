@@ -1,0 +1,26 @@
+/**
+ * @name Neobrutal
+ * @author Saltssaumure
+ * @authorLink https://github.com/Saltssaumure
+ * @description Neobrutalism brought to Discord. Supports light and dark mode, see GitHub for customisation options.
+ * @license GPL-3.0
+ * @version 1.0
+ * @invite uy8nKQVatp
+ * @source https://github.com/Saltssaumure/neobrutal-discord-theme
+ * @donate https://ko-fi.com/saltssaumure
+*/
+
+@import url("https://saltssaumure.github.io/neobrutal-discord-theme/brutal.min.css");
+
+/* See https://github.com/Saltssaumure/neobrutal-discord-theme#customisation for customisation settings. */
+.theme-light {
+    --neobrutal-color-1: #000;
+    --neobrutal-color-2: #fff;
+    --neobrutal-color-accent: #9d64df;
+}
+
+.theme-dark {
+    --neobrutal-color-1: #fff;
+    --neobrutal-color-2: #000;
+    --neobrutal-color-accent: #9d64df;
+}

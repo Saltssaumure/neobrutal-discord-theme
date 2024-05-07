@@ -4,7 +4,8 @@
 .wordmark__5b8c9 {
     &::after {
         @include channellist-topper($left: $serverlist-width);
-        content: var(--modtitle-text);
+        // content: var(--modtitle-text);
+        content: "Discord";
         font-family: var(--font-headline);
         background: $accent;
         color: $white;
