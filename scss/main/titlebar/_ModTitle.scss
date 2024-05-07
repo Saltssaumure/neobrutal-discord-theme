@@ -1,23 +1,11 @@
 @use "../../vars" as *;
+@use "../../mixins" as *;
 
 .wordmark__5b8c9 {
     &::after {
+        @include channellist-topper($left: $serverlist-width);
         content: var(--modtitle-text);
         font-family: var(--font-headline);
-        white-space: nowrap;
-        text-align: center;
-
-        position: fixed;
-        top: 0;
-        left: $serverlist-width;
-        width: calc($channellist-width / 2);
-        height: 36px;
-        box-sizing: border-box;
-        line-height: 1.6rem;
-        font-size: 1rem;
-
-        border: solid $black;
-        border-width: $border-width 0;
         background: $accent;
         color: $white;
     }

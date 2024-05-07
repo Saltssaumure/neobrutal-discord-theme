@@ -10,10 +10,19 @@
 
     // Drag locations
     -webkit-app-region: drag;
-    // Toolbar, channel description
+    // Toolbar, channel description, mask for windows controls
     .toolbar__62fb5,
-    .topic__16ae3 {
+    .topic__16ae3,
+    .platform-win &::after {
         -webkit-app-region: no-drag;
+    }
+    .platform-win &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 38px * 3;
+        height: 32px;
     }
 
     // Channel name

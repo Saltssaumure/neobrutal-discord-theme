@@ -20,7 +20,7 @@
     font-display: swap;
 }
 
-#{$root} {
+:root {
     --font-primary: HelveticaNeueLT, Helvetica, Arial, sans-serif;
     --font-display: HelveticaNeueLT, Helvetica, Arial, sans-serif;
 }

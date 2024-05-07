@@ -10,4 +10,26 @@
         background: $black;
         --header-primary: #{$white};
     }
+
+    // DM header (Find or start a conversation)
+    @at-root .searchBar__621ec {
+        box-shadow: none;
+        background: $black;
+        padding: calc($gap-width / 2) 0 $gap-width;
+        box-sizing: border-box;
+
+        .searchBarComponent__8f95f {
+            height: 100%;
+            padding: 0;
+            text-align: center;
+            font-size: 100%;
+            background: $black;
+            color: $white;
+
+            &:hover {
+                background: $white;
+                color: $black;
+            }
+        }
+    }
 }
