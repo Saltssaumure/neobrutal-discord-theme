@@ -67,7 +67,12 @@
                     --interactive-hover: #{$black};
                 }
 
-                // Display icon label
+                // Hide unavailable options
+                &:not(.clickable_ce0925) {
+                    display: none;
+                }
+
+                // Display icon label if enough space
                 @container (min-width: 1000px) {
                     &::after {
                         content: attr(aria-label);
