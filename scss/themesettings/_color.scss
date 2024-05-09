@@ -1,30 +1,18 @@
 @use "../vars" as *;
 
 .theme-light {
-    --neobrutal-color-1: #000;
-    --neobrutal-color-2: #fff;
-    --neobrutal-color-accent: #9d64df;
-}
-
-// .theme-dark {
-//     --neobrutal-color-1: #fff;
-//     --neobrutal-color-2: #000;
-//     --neobrutal-color-accent: #9d64df;
-// }
-
-// .theme-light {
-//     --neobrutal-color-1: #271a2e;
-//     --neobrutal-color-2: #d1d1cc;
-//     --neobrutal-color-accent: #9d64df;
-// }
-
-.theme-light {
     --neobrutal-color-1: #111;
     --neobrutal-color-2: #ddd;
     --neobrutal-color-accent: #9d64df;
 }
 
-#{$root} {
+.theme-dark {
+    --neobrutal-color-1: #111;
+    --neobrutal-color-2: #ddd;
+    --neobrutal-color-accent: #9d64df;
+}
+
+:is(.theme-light, .theme-dark) {
     --background-primary: #{$white};
     --background-secondary: #{$white};
     --background-tertiary: #{$white};
@@ -35,4 +23,10 @@
     --channels-default: #{$black};
     --header-primary: #{$black};
     --channel-icon: #{$black};
+
+    --interactive-muted: color-mix(in oklch, #{$black}, #{$white} 70%);
+    --interactive-hover: #{$black};
+    --interactive-active: #{$black};
+
+    --status-danger: #{$accent};
 }
