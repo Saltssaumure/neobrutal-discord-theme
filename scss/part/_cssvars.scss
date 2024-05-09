@@ -6,7 +6,7 @@
     --background-secondary: #{$white};
     --background-tertiary: #{$white};
     --background-secondary-alt: #{$white};
-    --background-floating: #{adjustLight($white, 0.2)};
+    --background-floating: #{$whitest};
 
     --text-normal: #{$black};
     --text-muted: #{$grey};

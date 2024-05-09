@@ -1,11 +1,11 @@
-@use "../vars" as *;
+@use "../../vars" as *;
 
 // Search
 .container__84c26 {
     --legacy-elevation-high: var(--elevation-high);
     --legacy-elevation-border: none;
 
-    --search-popout-option-fade: linear-gradient(90deg, transparent, var(--background-floating));
+    --search-popout-option-fade: linear-gradient(90deg, transparent, #{$whitest});
     --search-popout-option-fade-hover: linear-gradient(90deg, transparent, #{$black});
 
     --search-popout-option-non-text-color: #{$black};

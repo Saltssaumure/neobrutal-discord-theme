@@ -7,6 +7,7 @@
     --background-primary: #{$black};
     --home-background: #{$black};
     --text-normal: #{$white};
+    --header-secondary: #{$white};
 
     // Drag locations
     -webkit-app-region: drag;
@@ -37,8 +38,7 @@
         // Channel name and description
         @at-root .children_cde9af {
             @at-root .divider_bdb894 {
-                width: 2px;
-                background: $white;
+                display: none;
             }
         }
 

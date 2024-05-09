@@ -2,6 +2,7 @@
 
 $black: var(--neobrutal-color-1);
 $white: var(--neobrutal-color-2);
+$whitest: adjustLight($white, 0.2);
 $accent: var(--neobrutal-color-accent);
 $accent-semi: transparentize($accent, 80%);
 $grey: mix($black, $white 70%);
