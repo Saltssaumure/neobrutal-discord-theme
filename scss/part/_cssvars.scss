@@ -26,8 +26,8 @@
     --button-danger-background-active: #{$accent};
 
     --elevation-stroke: 1px 1px #{transparentize($accent, 50%)};
-    --elevation-low: 1px 1px #{transparentize($accent, 50%)};
-    --elevation-medium: 3px 3px #{transparentize($accent, 50%)};
+    --elevation-low: 2px 2px #{transparentize($accent, 50%)};
+    --elevation-medium: 4px 4px #{transparentize($accent, 50%)};
     --elevation-high: 6px 6px #{transparentize($accent, 50%)};
 
     --channel-text-area-placeholder: #{transparentize($black, 50%)};
