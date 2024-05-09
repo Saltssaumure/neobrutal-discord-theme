@@ -3,9 +3,9 @@
 // Header bar
 .container__26baa {
     --interactive-normal: #{$white};
-    --interactive-hover: #{$white};
     --channel-icon: #{$white};
     --background-primary: #{$black};
+    --home-background: #{$black};
     --text-normal: #{$white};
 
     // Drag locations
@@ -46,6 +46,7 @@
         @at-root .toolbar__62fb5 {
             justify-content: space-around;
             container-type: inline-size;
+            gap: $border-width;
 
             // Outmost containers
             > *,
@@ -61,10 +62,12 @@
 
             // Icon and label container
             .iconWrapper_de6cd1 {
-                &:hover {
+                &:hover,
+                &.selected__1fc53 {
                     background: $white;
                     color: $black;
                     --interactive-hover: #{$black};
+                    --interactive-active: #{$black};
                 }
 
                 // Hide unavailable options
@@ -87,6 +90,11 @@
                     text-decoration: underline $accent wavy 2px;
                     text-decoration-skip-ink: none;
                 }
+            }
+
+            // Dividers
+            .divider_bdb894 {
+                display: none;
             }
 
             // Search bar

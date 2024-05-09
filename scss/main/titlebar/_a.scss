@@ -5,8 +5,13 @@
     margin-top: 0;
 
     // Windows control buttons
-    .winButton_f17fb6 {
+    @at-root .winButton_f17fb6 {
         top: 0;
         border: $border-width solid $black;
+        --interactive-normal: #{$white};
+        --interactive-hover: #{$black};
+        --background-modifier-hover: #{$white};
+        background: $black;
+        --status-danger: #{$accent};
     }
 }
