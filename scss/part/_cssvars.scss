@@ -13,6 +13,7 @@
     --embed-title: #{$black};
     --channels-default: #{$black};
     --header-primary: #{$black};
+    --header-secondary: #{$black};
     --channel-icon: #{$black};
 
     --interactive-muted: #{$grey};
@@ -33,4 +34,9 @@
     --channel-text-area-placeholder: #{transparentize($black, 50%)};
     --input-placeholder-text-dark: #{transparentize($black, 50%)};
     --input-placeholder-text: #{transparentize($black, 50%)};
+
+    --scrollbar-auto-thumb: #{$accent};
+    --scrollbar-thin-thumb: #{$accent};
+    --scrollbar-auto-track: #{$grey};
+    --scrollbar-thin-track: #{$grey};
 }

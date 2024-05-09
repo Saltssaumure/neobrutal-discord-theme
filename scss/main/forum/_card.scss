@@ -12,6 +12,7 @@
 
         :is(&, &:hover, &.isOpen__8593d) {
             border: 0;
+            border-left: $gap-width solid $black;
         }
 
         // Currently open post
@@ -52,8 +53,25 @@
             }
         }
 
-        @at-root .bullet__4f67e {
-            display: none;
+        // Post footer
+        @at-root .footer_feccc4 {
+            gap: $gap-width * 2;
+
+            // Post reaction
+            .reaction_ef7e09 {
+                transition-property: none;
+                margin-right: 0;
+            }
+
+            // Divider
+            @at-root .bullet__4f67e {
+                display: none;
+            }
+
+            // Created at
+            .text-sm-normal__95a78 {
+                margin-top: 2px;
+            }
         }
     }
 }
