@@ -1,0 +1,18 @@
+// Functions
+
+// Transparentize
+@function transparentize($color, $amount) {
+    @return color-mix(in oklch, $color, transparent $amount);
+}
+
+// Lighten
+@function adjustLight($color, $amount) {
+    // @return color-mix(in srgb, $color, white $amount);
+    // Amount between 0 and 1
+    @return hsl(from $color h s calc((1 - l) * $amount + l));
+}
+
+// Mix
+@function mix($color1, $color2) {
+    @return color-mix(in oklch, $color1, $color2);
+}

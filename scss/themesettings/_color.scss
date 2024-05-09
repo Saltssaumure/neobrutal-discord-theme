@@ -1,5 +1,3 @@
-@use "../vars" as *;
-
 .theme-light {
     --neobrutal-color-1: #111;
     --neobrutal-color-2: #ddd;
@@ -7,26 +5,7 @@
 }
 
 .theme-dark {
-    --neobrutal-color-1: #111;
-    --neobrutal-color-2: #ddd;
+    --neobrutal-color-1: #ddd;
+    --neobrutal-color-2: #111;
     --neobrutal-color-accent: #9d64df;
-}
-
-:is(.theme-light, .theme-dark) {
-    --background-primary: #{$white};
-    --background-secondary: #{$white};
-    --background-tertiary: #{$white};
-    --background-secondary-alt: #{$white};
-
-    --text-normal: #{$black};
-    --embed-title: #{$black};
-    --channels-default: #{$black};
-    --header-primary: #{$black};
-    --channel-icon: #{$black};
-
-    --interactive-muted: color-mix(in oklch, #{$black}, #{$white} 70%);
-    --interactive-hover: #{$black};
-    --interactive-active: #{$black};
-
-    --status-danger: #{$accent};
 }

@@ -1,6 +1,12 @@
+@use "./funcs" as *;
+
 $black: var(--neobrutal-color-1);
 $white: var(--neobrutal-color-2);
 $accent: var(--neobrutal-color-accent);
+$accent-semi: transparentize($accent, 80%);
+$grey: mix($black, $white 70%);
+
+$dropshadow: 8px 8px;
 
 $border-width: 5px;
 $gap-width: 8px;
