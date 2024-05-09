@@ -15,6 +15,8 @@
     --header-primary: #{$black};
     --header-secondary: #{$black};
     --channel-icon: #{$black};
+    --modal-background: #{$white};
+    --modal-footer-background: #{$white};
 
     --interactive-muted: #{$grey};
     --interactive-normal: #{$black};
@@ -30,6 +32,8 @@
     --elevation-low: 2px 2px #{transparentize($accent, 50%)};
     --elevation-medium: 4px 4px #{transparentize($accent, 50%)};
     --elevation-high: 6px 6px #{transparentize($accent, 50%)};
+    --legacy-elevation-high: var(--elevation-high);
+    --legacy-elevation-border: none;
 
     --channel-text-area-placeholder: #{transparentize($black, 50%)};
     --input-placeholder-text-dark: #{transparentize($black, 50%)};
