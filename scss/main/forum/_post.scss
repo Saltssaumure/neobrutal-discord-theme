@@ -1,0 +1,44 @@
+@use "../../vars" as *;
+
+// Post card
+.card__691f2 {
+    .mainCard__0ec2c {
+        --header-primary: #{$black};
+        --header-secondary: #{$black};
+        --text-normal: #{$black};
+
+        :is(&, &:hover, &.isOpen__8593d):not(.header_b2c494) {
+            border: 0;
+        }
+
+        // Currently open post
+        &.isOpen__8593d {
+            box-shadow: var(--elevation-high);
+            transform: translateY(-2px);
+
+            background: $black;
+            --header-primary: #{$white};
+            --header-secondary: #{$white};
+            --text-normal: #{$white};
+        }
+
+        // Post info
+        @at-root .body_dd9e3d {
+            // Post title
+            @at-root .header_ff52a5 {
+                order: -1;
+            }
+            // Post tags
+            @at-root .tags_e6c42a {
+                .pill_f055c3 {
+                    background: $white;
+                    --text-normal: #{$black};
+                }
+            }
+        }
+
+        @at-root .bullet__4f67e {
+            display: none;
+        }
+    }
+}
