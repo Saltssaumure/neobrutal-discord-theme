@@ -5,3 +5,8 @@
     background: $black;
     width: $gap-width * 2;
 }
+
+// Chat header shadow
+.chat__1d65d::before {
+    display: none;
+}

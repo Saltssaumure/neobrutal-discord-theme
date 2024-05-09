@@ -28,6 +28,20 @@
                     --text-normal: #{$black};
                 }
             }
+
+            // Post reaction
+            .reaction_ef7e09 {
+                background: $black;
+
+                &.reactionMe__9fc5c {
+                    background: $white;
+                    border: none;
+                }
+
+                .reactionCount_b780c8 {
+                    color: $black;
+                }
+            }
         }
 
         // Post info

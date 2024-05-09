@@ -4,3 +4,33 @@
 .container_b92032 {
     background: $white;
 }
+
+// Forum post
+.scrollerInner__37fee {
+    overflow: unset;
+
+    // Post actions bar
+    @at-root .container__68e43 {
+        box-shadow: none;
+        background: $black;
+
+        // Any button
+        @at-root :is(.buttonInner__865de, .addReactButton__4342f) {
+            background: $black;
+            color: $white;
+
+            // Activated
+            &:is(.active_f1266e, .active_f2e487) {
+                :is(&, &:hover) {
+                    background: $white;
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    // Divider
+    .divider__4df9f {
+        display: none;
+    }
+}
