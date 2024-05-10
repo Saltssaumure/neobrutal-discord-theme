@@ -1,0 +1,17 @@
+@use "../../vars" as *;
+
+// Settings
+.baseLayer__2b890 + .layer_f7d46a {
+    z-index: 3001;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 16px;
+        height: 84px;
+        -webkit-app-region: drag;
+    }
+}
