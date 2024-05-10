@@ -1,0 +1,70 @@
+@use "../../vars" as *;
+
+// Friends
+
+// Friend list
+.peopleColumn__0c784 {
+    // Search bar
+    @at-root .searchBar__310d8 {
+        border: $border-width solid $black;
+
+        --interactive-normal: #{$white};
+        --interactive-hover: #{$white};
+
+        @at-root .inner__999f6 {
+            padding: 0;
+            gap: $border-width;
+            background: $black;
+
+            // Text input
+            @at-root .input__48d49 {
+                background: $white;
+            }
+
+            // Search icon
+            .iconLayout__67261 {
+            }
+        }
+    }
+
+    // Friend
+    @at-root .peopleListItem_dab480 {
+        border-top: 0;
+
+        --background-modifier-active: #{$white};
+
+        &:hover,
+        &.active__6b8ff {
+            background: $black;
+            --header-primary: #{$white};
+            --header-secondary: #{$white};
+            --interactive-normal: #{$white};
+            --interactive-hover: #{$white};
+            --interactive-active: #{$white};
+            --background-secondary: #{$black};
+            --background-tertiary: #{$black};
+            --background-modifier-active: #{$black};
+        }
+
+        // Actions
+        @at-root .actions_bd37ed {
+            // Action button
+            .actionButton__2b4bb {
+                // Hide message button
+                &:first-child {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// Active now
+.scroller__7c25e {
+    border-left: 0;
+
+    // Cards
+    @at-root .wrapper__3c6d5 {
+        border: 0;
+    }
+}

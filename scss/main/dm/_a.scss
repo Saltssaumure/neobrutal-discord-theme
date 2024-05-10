@@ -1,0 +1,44 @@
+@use "../../vars" as *;
+
+// DMs page
+
+// Sidebar channels
+.container__3792d {
+    --background-modifier-selected: #{$black};
+    --background-modifier-active: #{$black};
+    --background-modifier-hover: #{$black};
+    --interactive-active: #{$white};
+    --interactive-hover: #{$white};
+}
+
+// Tab bars
+:is(.topPill__63ad4, .side_b4b3f6) {
+    gap: $border-width;
+
+    // Tab
+    .item__48dda {
+        margin: 0;
+
+        &.themed_b957e8 {
+            // Selected or hovered
+            &:is(.selected_a523ff, :hover:not(.disabled__2717e), :active) {
+                background: $white;
+                color: $black;
+            }
+            // Friend
+            &.addFriend__4c0a2,
+            &.addFriend__4c0a2:is(:hover, :active) {
+                background: $accent;
+                color: $white;
+            }
+        }
+    }
+}
+
+// Header shadow
+.tabBody_a90ea8,
+.headerBar__3337a {
+    &::before {
+        display: none;
+    }
+}
