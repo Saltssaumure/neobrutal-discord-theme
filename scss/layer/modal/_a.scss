@@ -8,23 +8,13 @@
         @at-root .root_a28985 {
             // Header
             @at-root .header__5e5a6 {
-                background: $black;
-                --interactive-normal: #{$white};
-                --interactive-hover: #{$white};
-                --interactive-active: #{$white};
-
-                .defaultColor__8610e {
-                    color: $white;
-                }
+                --interactive-normal: #{$black};
+                --interactive-hover: #{$black};
+                --interactive-active: #{$black};
             }
 
             // Content
             @at-root .content_b28aab {
-                &::before {
-                    content: "";
-                    display: block;
-                    height: 20px;
-                }
             }
 
             // Footer

@@ -7,10 +7,10 @@ $accent: var(--neobrutal-color-accent);
 $accent-semi: transparentize($accent, 80%);
 $grey: mix($black, $white 70%);
 
-$dropshadow: 8px 8px;
-
 $border-width: 5px;
 $gap-width: 8px;
 $serverlist-width: 84px;
 $channellist-width: 240px;
 $searchbar-height: 36px;
+
+$appMount: ".appMount_c99875";
