@@ -7,6 +7,7 @@
     --background-tertiary: #{$white};
     --background-secondary-alt: #{$white};
     --background-floating: #{$whitest};
+    --background-accent: #{$accent};
 
     --text-normal: #{$black};
     --text-muted: #{$grey};
@@ -19,6 +20,7 @@
     --modal-footer-background: #{$white};
     --activity-card-background: #{$white};
     --input-background: #{$white};
+    --deprecated-store-bg: #{$white};
 
     --interactive-muted: #{$grey};
     --interactive-normal: #{$black};
