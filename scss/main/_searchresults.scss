@@ -1,0 +1,26 @@
+@use "../vars" as *;
+
+// Search results
+.searchResultsWrap__2e184 {
+    // Search header
+    @at-root .searchHeader__4d70e {
+        background: $black;
+
+        --header-primary: #{$white};
+        --interactive-normal: #{$white};
+        --interactive-hover: #{$black};
+
+        --background-modifier-hover: #{$white};
+        --background-modifier-selected: #{$white};
+        --background-modifier-active: #{$white};
+    }
+
+    // Search results
+    .scroller__5f036 {
+        // Jump to button
+        .button_ef08e7 {
+            background: $black;
+            color: $white;
+        }
+    }
+}

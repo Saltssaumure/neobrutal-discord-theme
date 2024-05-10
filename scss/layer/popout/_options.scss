@@ -1,0 +1,18 @@
+@use "../../vars" as *;
+
+// Options menu
+// Menu items
+.option_eb83e4 {
+    &[aria-selected="true"]:not(.option_eb83e4.multi__8d15f) {
+        color: $whitest;
+        background: $black;
+
+        .selectedIcon_e9ecc2 {
+            color: $whitest;
+
+            circle {
+                fill: $black;
+            }
+        }
+    }
+}

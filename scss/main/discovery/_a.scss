@@ -1,0 +1,50 @@
+@use "../../vars" as *;
+
+// Server discovery
+#{$appMount} .pageWrapper_c182d3,
+.sidebar_e031be + .scroller__32e73 {
+    background: $white;
+    color: $black;
+    border-top: 36px solid $black;
+
+    // Search
+    @at-root .search_e47903 .searchBox__02d0b {
+        background: $white;
+        box-shadow: none;
+
+        // Text input
+        .searchBoxInput__74f29 {
+            color: $black;
+
+            &::placeholder {
+                color: $grey;
+            }
+        }
+
+        // Search icon
+        .searchIcon__58dfd {
+            color: $grey;
+        }
+
+        .closeIcon_da3bc1,
+        .closeIcon_da3bc1:hover {
+            color: $black;
+        }
+    }
+
+    // Servers
+    @at-root .guildList__99864 {
+        // Server
+        @at-root .card__86773 {
+            // Server banner
+            @at-root .splashImage__9b574 {
+                height: 143px;
+            }
+        }
+    }
+
+    // Divider
+    .divider__6c6c1 {
+        background: unset;
+    }
+}

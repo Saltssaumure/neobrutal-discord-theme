@@ -1,0 +1,162 @@
+@use "../../vars" as *;
+
+// Header row
+@at-root .headerRow__86f2e {
+    // Would be great if this wasn't part of the lazy loader
+    // position: sticky !important;
+    // top: 0;
+    // z-index: 1;
+    background: $white;
+    padding-bottom: 0;
+    margin-bottom: $gap-width * 2;
+
+    // Make post / search post
+    @at-root .header_b2c494 {
+        background: $black;
+        border: $border-width solid $black;
+        --interactive-normal: #{$white};
+        --interactive-hover: #{$white};
+        --interactive-active: #{$white};
+
+        @at-root .container_c654d2 {
+            padding: 0;
+
+            // Generic input
+            @at-root .form__97f5c {
+                margin-right: 0;
+            }
+
+            // Top area
+            @at-root .formContainer__87e79 {
+                padding: 0;
+
+                // Search / close icon
+                @at-root .prefixElement_d6c5ac {
+                    margin-left: 6px;
+                }
+
+                // Text input
+                @at-root .form__97f5c {
+                    // Search term / post title
+                    @at-root .titleContainer_e517ed {
+                        background: $white;
+                        --interactive-normal: #{$black};
+                        --interactive-hover: #{$black};
+                        --interactive-active: #{$black};
+
+                        .title__20d69 {
+                            margin: calc($gap-width / 2 + 2px) $gap-width calc($gap-width / 2 - 2px);
+                        }
+                    }
+
+                    // Post body
+                    @at-root .bodyContainer__61b9e {
+                        background: $white;
+                        padding: $gap-width;
+                    }
+                }
+
+                // Attach input
+                @at-root .container__9dc79 {
+                    // Placeholder
+                    @at-root .uploadInput_a6cb60 {
+                        background: $black;
+
+                        :is(&, &:hover) .uploadIcon_dd6e1a {
+                            zoom: 1.5;
+                        }
+                    }
+
+                    // File counter
+                    .badge_f7250d {
+                        border: 0;
+                        top: 0;
+                        right: 0;
+                        background: $accent;
+                        color: $white;
+                    }
+
+                    // Extended file preview popout
+                    @at-root .popoutContainer_dbffea {
+                        top: -16px - $border-width;
+                        right: -16px - $border-width;
+
+                        @at-root .popout__6ba23 {
+                            background: $black;
+                            padding: 0;
+                            border: $border-width solid $black;
+
+                            // File upload options menu
+                            .miniPopover_c76342 {
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Bottom area
+            @at-root .formContainer__87e79 + .form__97f5c {
+                // Tags
+                @at-root .tagsContainer__20c4f {
+                    gap: 14px;
+                }
+                // Divider
+                @at-root .tagsDivider__0c01e {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    // Post guidelines
+    @at-root .container__852f7 {
+        border: $border-width solid $black;
+        --header-secondary: #{$black};
+    }
+
+    // Tags and sort posts bar
+    @at-root .tagsContainer__58760 {
+        background: $black;
+        border: $border-width solid $black;
+        padding: 0;
+        margin-top: $gap-width * 2;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+        // Sort & view
+        @at-root .sortDropdown__40a16[aria-expanded="false"] {
+            background: $black;
+            --interactive-normal: #{$white};
+        }
+
+        // Divider of no particular purpose
+        @at-root .divider_d1051b {
+            display: none;
+        }
+
+        // Main tag list
+        @at-root .tagList_d00c9d {
+            flex: 1 1 auto;
+            display: flex;
+            justify-content: flex-start;
+
+            @at-root .tagListInner__05bff {
+                gap: $border-width;
+            }
+        }
+
+        // Additional tags
+        @at-root .tagsButton__34537 {
+            position: relative;
+            left: unset !important;
+            &[aria-expanded="false"] {
+                background: $black;
+                --interactive-normal: #{$white};
+            }
+        }
+        @at-root .tagsButtonPlaceholder_cef034 {
+            display: none;
+        }
+    }
+}

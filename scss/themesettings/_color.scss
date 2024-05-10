@@ -1,26 +1,11 @@
-@use "../vars" as *;
-
 .theme-light {
-    --neobrutal-color-1: #000;
-    --neobrutal-color-2: #fff;
+    --neobrutal-color-1: #111;
+    --neobrutal-color-2: #ddd;
     --neobrutal-color-accent: #9d64df;
 }
 
 .theme-dark {
-    --neobrutal-color-1: #fff;
-    --neobrutal-color-2: #000;
+    --neobrutal-color-1: #ddd;
+    --neobrutal-color-2: #111;
     --neobrutal-color-accent: #9d64df;
-}
-
-#{$root} {
-    --background-primary: #{$white};
-    --background-secondary: #{$white};
-    --background-tertiary: #{$white};
-    --background-secondary-alt: #{$white};
-
-    --text-normal: #{$black};
-    --embed-title: #{$black};
-    --channels-default: #{$black};
-    --header-primary: #{$black};
-    --channel-icon: #{$black};
 }

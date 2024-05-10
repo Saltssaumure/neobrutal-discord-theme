@@ -3,5 +3,10 @@
 // Resize handle
 .resizeHandle_cc9d34 {
     background: $black;
-    width: $gap-width * 2;
+    width: $gap-width;
+}
+
+// Chat header shadow
+.chat__1d65d::before {
+    display: none;
 }

@@ -1,0 +1,13 @@
+@use "../../vars" as *;
+
+// Create server
+// Options
+.container__9dd63 {
+    border: none;
+
+    &:hover,
+    &:active {
+        background: $black;
+        --text-normal: #{$white};
+    }
+}

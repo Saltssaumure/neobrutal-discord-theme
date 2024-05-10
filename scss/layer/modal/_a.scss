@@ -1,0 +1,33 @@
+@use "../../vars" as *;
+@use "../../funcs" as *;
+
+// Modal
+
+.layer_c14d31 {
+    @at-root .focusLock__28507 {
+        @at-root .root_a28985 {
+            // Header
+            @at-root .header__5e5a6 {
+                --interactive-normal: #{$black};
+                --interactive-hover: #{$black};
+                --interactive-active: #{$black};
+            }
+
+            // Content
+            @at-root .content_b28aab {
+            }
+
+            // Footer
+            @at-root .footer_e0b400 {
+                &.footerSeparator__2af8d {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+// Backdrop
+.backdrop__1a911 {
+    background: transparentize($black, 50%) !important;
+}

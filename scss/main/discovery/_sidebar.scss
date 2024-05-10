@@ -1,0 +1,15 @@
+@use "../../vars" as *;
+
+// Sidebar
+// Category
+.categoryItem__0608f {
+    // Selected or hovered or active
+    &.selectedCategoryItem__3e361,
+    &:hover,
+    &:active {
+        .itemInner_eedb2b {
+            background: $black;
+            color: $white;
+        }
+    }
+}

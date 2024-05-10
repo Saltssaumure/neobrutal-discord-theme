@@ -1,0 +1,13 @@
+// Scrollbar fix
+* {
+    scrollbar-width: unset !important;
+    scrollbar-color: unset !important;
+}
+
+.thin_b1c063,
+.thin__62e51 {
+    &::-webkit-scrollbar-track {
+        background-clip: padding-box;
+        border-color: transparent;
+    }
+}

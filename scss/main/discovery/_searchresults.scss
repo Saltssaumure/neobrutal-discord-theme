@@ -1,0 +1,88 @@
+@use "../../vars" as *;
+
+// Search results
+// Search bar and language container
+.container_abed14.searchPage_c33350 {
+    background: $black;
+    border: $border-width solid $black;
+    gap: $border-width;
+
+    // Search bar
+    .search_e47903 {
+        max-width: unset;
+
+        @at-root #{$appMount} .searchBox__56feb {
+            background: $white;
+            box-shadow: none;
+
+            &:focus,
+            &:focus-within {
+                border-color: unset;
+            }
+
+            @at-root .input_f27786 {
+                &::placeholder {
+                    color: $grey;
+                }
+            }
+
+            .searchIcon_d1a3c1 {
+                color: $grey;
+            }
+        }
+    }
+
+    // Language selector
+    @at-root .languageSelector_f25b72 {
+        margin-left: 0;
+    }
+}
+
+// Server categories bar
+.categories_bbef0d {
+    background: $black;
+    gap: $border-width;
+    border: $border-width solid $black;
+    justify-content: space-around;
+    max-width: unset;
+
+    // Category
+    @at-root .categoryPill_c6ae1b {
+        margin: 0;
+        --text-muted: #{$white};
+
+        &.selected_b5f19b,
+        &:hover:not(.selected_b5f19b) {
+            background: $white;
+            --white-500: #{$black};
+            --text-muted: #{$black};
+        }
+    }
+}
+
+// Results
+.results__7a0d3 {
+    max-width: unset;
+
+    @at-root .guildList_d05b32 {
+        max-width: unset;
+
+        // Separator
+        @at-root .separator__16faf {
+            border-top: 0;
+        }
+    }
+}
+
+// Navigation
+.pageControlContainer__86479 {
+    background: $black;
+    --header-primary: #{$white};
+    @at-root .pageButton_bf9853 {
+        &.activeButton__70b70,
+        &.activeButton__70b70:hover {
+            background: $white;
+            color: $black;
+        }
+    }
+}

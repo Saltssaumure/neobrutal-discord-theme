@@ -1,0 +1,57 @@
+@use "../vars" as *;
+
+// User control panel
+.panels__58331 {
+    --background-modifier-selected: #{$black};
+    --interactive-hover: #{$white};
+
+    // Square buttons
+    .button_ae40a4 {
+        &.enabled__214db:hover {
+            .lottieIcon_c7076c :not(defs *) {
+                &[fill][fill-opacity] {
+                    fill: $white;
+                }
+                &[stroke][stroke-opacity] {
+                    stroke: $white;
+                }
+            }
+        }
+    }
+
+    // Current activity
+    @at-root .activityPanel_b73e7a {
+        border-bottom: none;
+    }
+
+    // Voice activity
+    @at-root .wrapper_e832ee {
+        @at-root .container_e1958d {
+            border-bottom: none;
+
+            @at-root .actionButtons__85e3c.actionButtons__85e3c {
+                .button_b82d53 .buttonColor__7bad9,
+                .button_b82d53.buttonColor__7bad9 {
+                    background: $white;
+                    color: $black;
+
+                    &:hover {
+                        background: $black;
+                        color: $white;
+                        --interactive-active: #{$white};
+                    }
+                }
+            }
+        }
+    }
+
+    // User panel
+    @at-root .container_debb33 {
+        // User info
+        @at-root .withTagAsButton_e22174:hover,
+            .withTagless__058f8:hover {
+            --header-primary: #{$white};
+            --header-secondary: #{$white};
+        }
+    }
+}

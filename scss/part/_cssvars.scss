@@ -1,0 +1,50 @@
+@use "../vars" as *;
+@use "../funcs" as *;
+
+:is(.theme-light, .theme-dark) {
+    --background-primary: #{$white};
+    --background-secondary: #{$white};
+    --background-tertiary: #{$white};
+    --background-secondary-alt: #{$white};
+    --background-floating: #{$whitest};
+    --background-accent: #{$accent};
+
+    --text-normal: #{$black};
+    --text-muted: #{$grey};
+    --embed-title: #{$black};
+    --channels-default: #{$black};
+    --header-primary: #{$black};
+    --header-secondary: #{$black};
+    --channel-icon: #{$black};
+    --modal-background: #{$white};
+    --modal-footer-background: #{$white};
+    --activity-card-background: #{$white};
+    --input-background: #{$white};
+    --deprecated-store-bg: #{$white};
+
+    --interactive-muted: #{$grey};
+    --interactive-normal: #{$black};
+    --interactive-hover: #{$black};
+    --interactive-active: #{$black};
+
+    --status-danger: #{$accent};
+    --button-danger-background: #{$accent};
+    --button-danger-background-hover: #{$accent};
+    --button-danger-background-active: #{$accent};
+
+    --elevation-stroke: 1px 1px #{transparentize($accent, 50%)};
+    --elevation-low: 2px 2px #{transparentize($accent, 50%)};
+    --elevation-medium: 4px 4px #{transparentize($accent, 50%)};
+    --elevation-high: 6px 6px #{transparentize($accent, 50%)};
+    --legacy-elevation-high: var(--elevation-high);
+    --legacy-elevation-border: none;
+
+    --channel-text-area-placeholder: #{transparentize($black, 50%)};
+    --input-placeholder-text-dark: #{transparentize($black, 50%)};
+    --input-placeholder-text: #{transparentize($black, 50%)};
+
+    --scrollbar-auto-thumb: #{$accent};
+    --scrollbar-thin-thumb: #{$accent};
+    --scrollbar-auto-track: #{$grey};
+    --scrollbar-thin-track: #{$grey};
+}

@@ -1,12 +1,13 @@
 @use "../vars" as *;
 
 // Header bar
-.container__26baa {
+.themed_b152d4.container__26baa {
     --interactive-normal: #{$white};
-    --interactive-hover: #{$white};
     --channel-icon: #{$white};
     --background-primary: #{$black};
+    --home-background: #{$black};
     --text-normal: #{$white};
+    --header-secondary: #{$white};
 
     // Drag locations
     -webkit-app-region: drag;
@@ -37,8 +38,7 @@
         // Channel name and description
         @at-root .children_cde9af {
             @at-root .divider_bdb894 {
-                width: 2px;
-                background: $white;
+                display: none;
             }
         }
 
@@ -46,6 +46,7 @@
         @at-root .toolbar__62fb5 {
             justify-content: space-around;
             container-type: inline-size;
+            gap: $border-width;
 
             // Outmost containers
             > *,
@@ -61,10 +62,12 @@
 
             // Icon and label container
             .iconWrapper_de6cd1 {
-                &:hover {
+                &:hover,
+                &.selected__1fc53 {
                     background: $white;
                     color: $black;
                     --interactive-hover: #{$black};
+                    --interactive-active: #{$black};
                 }
 
                 // Hide unavailable options
@@ -89,10 +92,35 @@
                 }
             }
 
+            // Dividers
+            .divider_bdb894 {
+                display: none;
+            }
+
             // Search bar
             // For alternative placement, see themesettings/_search
             @at-root .search__07df0 {
                 order: 1;
+
+                @at-root .searchBar__5a20a {
+                    color: $black;
+
+                    // from: to: etc.
+                    .searchFilter_dbda51 {
+                        background: $black;
+                        color: $white;
+                    }
+
+                    // Answer to the above
+                    .searchAnswer__2ccaf {
+                        background: $black;
+                        color: $accent;
+                    }
+
+                    @at-root .clear__70411 .icon__5c8c7 {
+                        color: $black;
+                    }
+                }
             }
 
             // Remove help button

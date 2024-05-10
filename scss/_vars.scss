@@ -1,11 +1,16 @@
+@use "./funcs" as *;
+
 $black: var(--neobrutal-color-1);
 $white: var(--neobrutal-color-2);
+$whitest: adjustLight($white, 0.2);
 $accent: var(--neobrutal-color-accent);
-
-$root: ".appMount_c99875";
+$accent-semi: transparentize($accent, 80%);
+$grey: mix($black, $white 70%);
 
 $border-width: 5px;
 $gap-width: 8px;
 $serverlist-width: 84px;
 $channellist-width: 240px;
 $searchbar-height: 36px;
+
+$appMount: ".appMount_c99875";

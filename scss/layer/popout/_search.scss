@@ -1,0 +1,135 @@
+@use "../../vars" as *;
+
+// Search
+.container__84c26 {
+    --search-popout-option-fade: linear-gradient(90deg, transparent, #{$whitest});
+    --search-popout-option-fade-hover: linear-gradient(90deg, transparent, #{$black});
+
+    --search-popout-option-non-text-color: #{$black};
+    --search-popout-date-picker-hint-value-text: #{$accent};
+    --search-popout-date-picker-hint-value-background: #{$black};
+    --search-popout-date-picker-hint-value-background-hover: #{$black};
+    --search-popout-date-picker-hint-text: #{$black};
+
+    --deprecated-text-input-border-disabled: none;
+
+    // Search for
+    .queryContainer_c1cb2f {
+        background: inherit;
+        color: $black;
+        border-bottom: none;
+
+        strong {
+            color: $black;
+        }
+    }
+
+    // Results group
+    @at-root .resultsGroup_b221b0 {
+        &::before {
+            border: none;
+        }
+
+        // Title
+        .header__00739 {
+        }
+    }
+
+    // Search options
+    @at-root .option__91497 {
+        --background-modifier-hover: #{$black};
+        --background-modifier-active: #{$black};
+        --background-modifier-selected: #{$black};
+
+        --interactive-normal: #{$black};
+        --interactive-hover: #{$white};
+        --interactive-active: #{$white};
+    }
+
+    // Datepicker
+    @at-root .datePicker_df63a7 {
+        // Calendar
+        .calendarPicker__47c85 {
+            .react-datepicker {
+                background: unset;
+
+                // Nav arrows
+                .react-datepicker__navigation {
+                    &.react-datepicker__navigation--previous,
+                    &.react-datepicker__navigation--next {
+                        border: 0;
+                    }
+                }
+
+                // Month container
+                .react-datepicker__month-container {
+                    // Header
+                    .react-datepicker__header {
+                        background: unset;
+
+                        // Month label
+                        .react-datepicker__current-month {
+                            color: $black;
+                        }
+                        // Days of the week
+                        .react-datepicker__day-names {
+                            // Day label
+                            .react-datepicker__day-name {
+                                color: $black;
+                            }
+                        }
+                    }
+
+                    // Month
+                    .react-datepicker__month {
+                        // Week
+                        .react-datepicker__week {
+                            // Day
+                            .react-datepicker__day {
+                                color: $black;
+
+                                // Outside month
+                                &.react-datepicker__day--outside-month {
+                                    background: unset;
+                                }
+                                // Disabled
+                                &.react-datepicker__day--disabled {
+                                    background: unset;
+                                    color: $grey;
+                                }
+                                // Selected
+                                &.react-datepicker__day--selected::after {
+                                    background: $accent;
+                                }
+
+                                &:hover,
+                                &.react-datepicker__day--selected:hover,
+                                &.react-datepicker__day--keyboard-selected {
+                                    background: $black;
+                                    color: $white;
+                                }
+
+                                // Last day of week
+                                &:last-of-type {
+                                    border-right: none;
+                                }
+                            }
+
+                            // Last week of month
+                            &:last-of-type {
+                                .react-datepicker__day {
+                                    border-bottom: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Datepicker hint
+        @at-root .datePickerHint_d023b6 {
+            border-top: none;
+        }
+    }
+}

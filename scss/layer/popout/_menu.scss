@@ -1,0 +1,86 @@
+@use "../../vars" as *;
+
+// Menu
+.menu__088f7 {
+    // Group separator
+    @at-root .separator__174fc {
+        border-bottom: none;
+    }
+
+    // Emoji quick add
+    @at-root .wrapper__01a96 {
+        padding: 0;
+        @at-root .customItem__3f15f {
+            .button_bfb8e1 {
+                background: $whitest;
+
+                &:hover {
+                    background: $black;
+                }
+            }
+        }
+    }
+}
+
+// Menu items
+// Default colour
+.colorDefault_e361cf {
+    // Focused
+    &.focused_dcafb9,
+    // Active
+    &:active:not(.hideInteraction__0b569) {
+        color: $whitest;
+        background: $black;
+
+        .subtext__694e2,
+        .checkbox__378d3,
+        .radioSelection__41d1e,
+        .caret_ce50ce {
+            color: $grey;
+        }
+
+        path {
+            fill: $whitest;
+        }
+    }
+
+    .subtext__694e2 {
+        color: $grey;
+    }
+
+    .caret_ce50ce,
+    .radioSelection__41d1e,
+    .checkbox__378d3 {
+        color: $black;
+    }
+
+    .check__8d1bd {
+        color: $whitest;
+    }
+}
+
+// Danger colour
+.colorDanger__08c25 {
+    // Focused
+    &.focused_dcafb9 {
+        background: $accent;
+    }
+}
+
+// Brand colour
+.colorBrand__9bb0f.colorBrand__9bb0f {
+    // Focused
+    &.focused_dcafb9 {
+        color: $whitest;
+    }
+    // Unfocused
+    &:not(.focused_dcafb9) {
+        color: $black;
+    }
+}
+
+// Disabled item
+.disabled_a4e144 {
+    opacity: 1;
+    color: $grey;
+}

@@ -32,4 +32,84 @@
             }
         }
     }
+
+    // Category
+    @at-root .containerDefault_e3b32b {
+    }
+
+    // Channel
+    @at-root .containerDefault_ae2ea4 {
+        --background-modifier-hover: #{$black};
+        --background-modifier-active: #{$black};
+        --background-modifier-selected: #{$black};
+
+        --interactive-normal: #{$black};
+        --interactive-hover: #{$white};
+        --interactive-active: #{$white};
+
+        --text-muted: var(--interactive-muted);
+
+        // Channel background
+        @at-root :is(.link_ddbb36, .users__65981, .total_c01838) {
+            // Hovered channels
+            @at-root .wrapper__612a5:hover &,
+                .modeMuted_f0a72e:hover &,
+                .modeUnreadImportant__35358:hover & {
+                background: var(--background-modifier-hover);
+            }
+
+            // Selected and connected channels
+            @at-root .modeSelected__473f1 &,
+                .modeSelected__473f1:hover &,
+                .modeConnected__52a8f &,
+                .modeConnected__52a8f:hover & {
+                background: var(--background-modifier-selected);
+            }
+        }
+        @at-root .total_c01838:after {
+            display: none;
+        }
+
+        // Channel icon, name, actions, voice channel status, user limit
+        @at-root :is(.icon__67ab4, .name__4eb92, .actionIcon_b149a2, .statusText_ebf535, .users__65981, .total_c01838) {
+            // Read and unread channels
+            @at-root .wrapper__612a5 &,
+                .modeUnreadImportant__35358 & {
+                color: var(--interactive-normal);
+            }
+
+            // Muted channels
+            @at-root .modeMuted_f0a72e & {
+                color: var(--interactive-muted);
+            }
+
+            // Hovered channels
+            @at-root .wrapper__612a5:hover &,
+                .modeMuted_f0a72e:hover &,
+                .modeUnreadImportant__35358:hover & {
+                color: var(--interactive-hover);
+            }
+
+            // Selected and connected channels
+            @at-root .modeSelected__473f1 &,
+                .modeSelected__473f1:hover &,
+                .modeConnected__52a8f &,
+                .modeConnected__52a8f:hover & {
+                color: var(--interactive-active);
+            }
+        }
+
+        // Voice chat user mute/deafen status, username
+        @at-root :is(.icon__1e4c2, .username_a42504) {
+            .voiceUser__629a5:hover & {
+                color: var(--interactive-hover);
+            }
+        }
+
+        // Live streaming icon
+        .live_b195a5 {
+            color: $white;
+            background: $accent !important;
+        }
+    }
 }

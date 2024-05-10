@@ -4,11 +4,11 @@
 .wordmark__5b8c9 {
     &::after {
         @include channellist-topper($left: $serverlist-width);
-        // content: var(--modtitle-text);
-        content: "Discord";
+        content: var(--modtitle-text);
         font-family: var(--font-headline);
         background: $accent;
         color: $white;
+        -webkit-app-region: drag;
     }
 
     > svg {
@@ -20,7 +20,7 @@
 }
 
 :root {
-    --modtitle-text: "Modified Discord";
+    --modtitle-text: "Discord";
 
     &:has(#vencord-css-core) {
         --modtitle-text: "Vencord";
@@ -32,7 +32,7 @@
         --modtitle-text: "Replugged";
     }
     &:has(bd-body) {
-        --modtitle-text: "BetterDiscord";
+        --modtitle-text: "BD";
     }
     &:has(script[src^="chrome-extension://cpojbkbhfkkljmlojagocnbmiaagkhkn"])
     {
