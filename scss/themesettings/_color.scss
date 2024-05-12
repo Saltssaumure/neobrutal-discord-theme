@@ -1,13 +1,40 @@
-.theme-light {
-    --neobrutal-color-1: #111112;
-    --neobrutal-color-2: #ddddde;
-    --neobrutal-color-text: #300066;
-    --neobrutal-color-accent: #9d64df;
+@use "sass:map";
+
+$default-colors: (
+    "1": (
+        "light": #111112,
+        "dark": #ddddde
+    ),
+    "2": (
+        "light": #ddddde,
+        "dark": #111112
+    ),
+    "text": (
+        "light": #300066,
+        "dark": #e4ccff
+    ),
+    "accent": (
+        "light": #9d64df,
+        "dark": #9d64df
+    )
+);
+
+$modes: ("light", "dark");
+
+// Generate default .theme-mode
+@each $mode in $modes {
+    .theme-#{$mode} {
+        @each $name, $colorpair in $default-colors {
+            --neobrutal-color-#{$name}: #{map.get($colorpair, $mode)};
+        }
+    }
 }
 
-.theme-dark {
-    --neobrutal-color-1: #ddddde;
-    --neobrutal-color-2: #111112;
-    --neobrutal-color-text: #e4ccff;
-    --neobrutal-color-accent: #9d64df;
+// Prevents invalid user customised values from being applied
+@each $name, $colorpair in $default-colors {
+    @property --neobrutal-color-#{$name} {
+        syntax: "<color>";
+        inherits: true;
+        initial-value: map.get($colorpair, "light");
+    }
 }
