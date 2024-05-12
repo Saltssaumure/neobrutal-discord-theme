@@ -2,10 +2,12 @@
 
 $black: var(--neobrutal-color-1);
 $white: var(--neobrutal-color-2);
+$grey: mix($black, $white 90%);
+$text: var(--neobrutal-color-text);
+$text-muted: mix($text, $white 60%);
 $whitest: adjustLight($white, 0.2);
 $accent: var(--neobrutal-color-accent);
 $accent-semi: transparentize($accent, 80%);
-$grey: mix($black, $white 70%);
 
 $border-width: 5px;
 $gap-width: 8px;

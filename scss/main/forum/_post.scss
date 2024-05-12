@@ -9,6 +9,9 @@
         box-shadow: none;
         background: $black;
 
+        --interactive-active: #{$black};
+        --interactive-hover: #{$black};
+
         // Any button
         @at-root :is(.buttonInner__865de, .addReactButton__4342f) {
             background: $black;

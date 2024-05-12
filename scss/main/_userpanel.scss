@@ -2,7 +2,7 @@
 
 // User control panel
 .panels__58331 {
-    --background-modifier-selected: #{$black};
+    --background-modifier-selected: #{$text};
     --interactive-hover: #{$white};
 
     // Square buttons
@@ -33,10 +33,10 @@
                 .button_b82d53 .buttonColor__7bad9,
                 .button_b82d53.buttonColor__7bad9 {
                     background: $white;
-                    color: $black;
+                    color: $text;
 
                     &:hover {
-                        background: $black;
+                        background: $text;
                         color: $white;
                         --interactive-active: #{$white};
                     }

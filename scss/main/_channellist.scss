@@ -39,11 +39,7 @@
 
     // Channel
     @at-root .containerDefault_ae2ea4 {
-        --background-modifier-hover: #{$black};
-        --background-modifier-active: #{$black};
-        --background-modifier-selected: #{$black};
-
-        --interactive-normal: #{$black};
+        --interactive-normal: #{$text};
         --interactive-hover: #{$white};
         --interactive-active: #{$white};
 
@@ -110,6 +106,22 @@
         .live_b195a5 {
             color: $white;
             background: $accent !important;
+        }
+
+        // Unread channel
+        :has(.unread__48cf4) {
+            $name-height: 2px;
+
+            .link_ddbb36 {
+                padding: 6px - $name-height 8px;
+
+                .name__4eb92 {
+                    text-decoration: underline $accent wavy 2px;
+                    text-decoration-skip-ink: none;
+                    overflow-y: visible;
+                    height: 20px + $name-height * 2;
+                }
+            }
         }
     }
 }

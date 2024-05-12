@@ -7,7 +7,7 @@
 
     &:hover,
     &:active {
-        background: $black;
+        background: $text;
         --text-normal: #{$white};
     }
 }

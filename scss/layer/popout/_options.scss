@@ -5,13 +5,13 @@
 .option_eb83e4 {
     &[aria-selected="true"]:not(.option_eb83e4.multi__8d15f) {
         color: $whitest;
-        background: $black;
+        background: $text;
 
         .selectedIcon_e9ecc2 {
             color: $whitest;
 
             circle {
-                fill: $black;
+                fill: $text;
             }
         }
     }

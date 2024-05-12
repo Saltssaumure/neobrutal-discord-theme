@@ -15,7 +15,7 @@
                 background: $whitest;
 
                 &:hover {
-                    background: $black;
+                    background: $text;
                 }
             }
         }
@@ -30,13 +30,13 @@
     // Active
     &:active:not(.hideInteraction__0b569) {
         color: $whitest;
-        background: $black;
+        background: $text;
 
         .subtext__694e2,
         .checkbox__378d3,
         .radioSelection__41d1e,
         .caret_ce50ce {
-            color: $grey;
+            color: $text-muted;
         }
 
         path {
@@ -45,13 +45,13 @@
     }
 
     .subtext__694e2 {
-        color: $grey;
+        color: $text-muted;
     }
 
     .caret_ce50ce,
     .radioSelection__41d1e,
     .checkbox__378d3 {
-        color: $black;
+        color: $text;
     }
 
     .check__8d1bd {
@@ -75,12 +75,12 @@
     }
     // Unfocused
     &:not(.focused_dcafb9) {
-        color: $black;
+        color: $text;
     }
 }
 
 // Disabled item
 .disabled_a4e144 {
     opacity: 1;
-    color: $grey;
+    color: $text-muted;
 }

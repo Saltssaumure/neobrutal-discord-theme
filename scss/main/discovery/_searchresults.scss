@@ -22,12 +22,12 @@
 
             @at-root .input_f27786 {
                 &::placeholder {
-                    color: $grey;
+                    color: $text-muted;
                 }
             }
 
             .searchIcon_d1a3c1 {
-                color: $grey;
+                color: $text-muted;
             }
         }
     }
@@ -79,6 +79,9 @@
     background: $black;
     --header-primary: #{$white};
     @at-root .pageButton_bf9853 {
+        &:hover {
+            color: $black;
+        }
         &.activeButton__70b70,
         &.activeButton__70b70:hover {
             background: $white;

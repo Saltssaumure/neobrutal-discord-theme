@@ -3,24 +3,24 @@
 // Search
 .container__84c26 {
     --search-popout-option-fade: linear-gradient(90deg, transparent, #{$whitest});
-    --search-popout-option-fade-hover: linear-gradient(90deg, transparent, #{$black});
+    --search-popout-option-fade-hover: linear-gradient(90deg, transparent, #{$text});
 
-    --search-popout-option-non-text-color: #{$black};
+    --search-popout-option-non-text-color: #{$text};
     --search-popout-date-picker-hint-value-text: #{$accent};
-    --search-popout-date-picker-hint-value-background: #{$black};
-    --search-popout-date-picker-hint-value-background-hover: #{$black};
-    --search-popout-date-picker-hint-text: #{$black};
+    --search-popout-date-picker-hint-value-background: #{$text};
+    --search-popout-date-picker-hint-value-background-hover: #{$text};
+    --search-popout-date-picker-hint-text: #{$text};
 
     --deprecated-text-input-border-disabled: none;
 
     // Search for
     .queryContainer_c1cb2f {
         background: inherit;
-        color: $black;
+        color: $text;
         border-bottom: none;
 
         strong {
-            color: $black;
+            color: $text;
         }
     }
 
@@ -37,13 +37,20 @@
 
     // Search options
     @at-root .option__91497 {
-        --background-modifier-hover: #{$black};
-        --background-modifier-active: #{$black};
-        --background-modifier-selected: #{$black};
+        --background-modifier-hover: #{$text};
+        --background-modifier-active: #{$text};
+        --background-modifier-selected: #{$text};
 
-        --interactive-normal: #{$black};
+        --interactive-normal: #{$text};
         --interactive-hover: #{$white};
         --interactive-active: #{$white};
+
+        &:hover {
+            // User nickname, user username, other non-text(?)
+            :is(.displayedNick_ee206c, .displayUsername__41697, .nonText_fbd88d) {
+                color: #{$white};
+            }
+        }
     }
 
     // Datepicker
@@ -69,13 +76,13 @@
 
                         // Month label
                         .react-datepicker__current-month {
-                            color: $black;
+                            color: $text;
                         }
                         // Days of the week
                         .react-datepicker__day-names {
                             // Day label
                             .react-datepicker__day-name {
-                                color: $black;
+                                color: $text;
                             }
                         }
                     }
@@ -86,7 +93,7 @@
                         .react-datepicker__week {
                             // Day
                             .react-datepicker__day {
-                                color: $black;
+                                color: $text;
 
                                 // Outside month
                                 &.react-datepicker__day--outside-month {
@@ -95,7 +102,7 @@
                                 // Disabled
                                 &.react-datepicker__day--disabled {
                                     background: unset;
-                                    color: $grey;
+                                    color: $text-muted;
                                 }
                                 // Selected
                                 &.react-datepicker__day--selected::after {
@@ -105,7 +112,7 @@
                                 &:hover,
                                 &.react-datepicker__day--selected:hover,
                                 &.react-datepicker__day--keyboard-selected {
-                                    background: $black;
+                                    background: $text;
                                     color: $white;
                                 }
 

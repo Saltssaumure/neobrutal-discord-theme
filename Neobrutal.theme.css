@@ -14,13 +14,15 @@
 
 /* See https://github.com/Saltssaumure/neobrutal-discord-theme#customisation for customisation settings. */
 .theme-light {
-    --neobrutal-color-1: #000;
-    --neobrutal-color-2: #fff;
+    --neobrutal-color-1: #111112;
+    --neobrutal-color-2: #ddddde;
+    --neobrutal-color-text: #300066;
     --neobrutal-color-accent: #9d64df;
 }
 
 .theme-dark {
-    --neobrutal-color-1: #fff;
-    --neobrutal-color-2: #000;
+    --neobrutal-color-1: #ddddde;
+    --neobrutal-color-2: #111112;
+    --neobrutal-color-text: #e4ccff;
     --neobrutal-color-accent: #9d64df;
 }
