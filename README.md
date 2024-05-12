@@ -76,6 +76,7 @@
 | ------------------------ | -------------------------- | ------------------------ | ------------- | ------------ |
 | Header background colour | `--neobrutal-color-1`      | Any [colour][css-color]. | `#000`        | `#fff`       |
 | Chat background colour   | `--neobrutal-color-2`      | Any [colour][css-color]. | `#fff`        | `#000`       |
+| Text color               | `--neobrutal-color-text`   | Any [colour][css-color]. | `#300066`     | `#e4ccff`    |
 | Accent colour            | `--neobrutal-color-accent` | Any [colour][css-color]. | `#9d64df`     | `#9d64df`    |
 
 ### BetterDiscord
@@ -86,7 +87,7 @@
 ### Replugged
 1. Enable `Automatically Apply Quick CSS` in `Settings` > `Replugged` > `General`.
 1. Open `Settings` > `Replugged` > `Quick CSS`.
-3. Copy and paste lines 15-26 of [`Neobrutal.theme.css`][.theme.css].
+3. Copy and paste lines 15-28 of [`Neobrutal.theme.css`][.theme.css].
 3. Edit the variable values and save.
 
 ### Vencord
@@ -96,7 +97,7 @@
 4. Edit the variable values and save.
 #### Online
 1. `Enable Custom CSS` in `Settings` > `Vencord` > `Vencord` and click `Open QuickCSS File`.
-2. Copy and paste lines 15-26 of [`Neobrutal.theme.css`][.theme.css].
+2. Copy and paste lines 15-28 of [`Neobrutal.theme.css`][.theme.css].
 3. Edit the variable values.
 
 ## License

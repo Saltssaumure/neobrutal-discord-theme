@@ -4,7 +4,7 @@
 #{$appMount} .pageWrapper_c182d3,
 .sidebar_e031be + .scroller__32e73 {
     background: $white;
-    color: $black;
+    color: $text;
     border-top: 36px solid $black;
 
     // Search
@@ -14,21 +14,21 @@
 
         // Text input
         .searchBoxInput__74f29 {
-            color: $black;
+            color: $text;
 
             &::placeholder {
-                color: $grey;
+                color: $text-muted;
             }
         }
 
         // Search icon
         .searchIcon__58dfd {
-            color: $grey;
+            color: $text-muted;
         }
 
         .closeIcon_da3bc1,
         .closeIcon_da3bc1:hover {
-            color: $black;
+            color: $text;
         }
     }
 

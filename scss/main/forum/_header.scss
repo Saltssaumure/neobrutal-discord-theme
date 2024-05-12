@@ -121,13 +121,18 @@
         border: $border-width solid $black;
         padding: 0;
         margin-top: $gap-width * 2;
+        gap: $gap-width;
         justify-content: space-between;
         flex-direction: row-reverse;
 
         // Sort & view
-        @at-root .sortDropdown__40a16[aria-expanded="false"] {
-            background: $black;
-            --interactive-normal: #{$white};
+        @at-root .sortDropdown__40a16 {
+            --interactive-normal: #{$black};
+
+            &[aria-expanded="false"] {
+                background: $black;
+                --interactive-normal: #{$white};
+            }
         }
 
         // Divider of no particular purpose
@@ -143,6 +148,14 @@
 
             @at-root .tagListInner__05bff {
                 gap: $border-width;
+
+                // Tag
+                @at-root .tag__40098.tag__40098.tag__40098.tag__40098 {
+                    &:hover {
+                        background: $white;
+                        --text-normal: #{$black};
+                    }
+                }
             }
         }
 
@@ -150,6 +163,9 @@
         @at-root .tagsButton__34537 {
             position: relative;
             left: unset !important;
+
+            --interactive-normal: #{$black};
+
             &[aria-expanded="false"] {
                 background: $black;
                 --interactive-normal: #{$white};

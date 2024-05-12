@@ -39,11 +39,7 @@
 
     // Channel
     @at-root .containerDefault_ae2ea4 {
-        --background-modifier-hover: #{$black};
-        --background-modifier-active: #{$black};
-        --background-modifier-selected: #{$black};
-
-        --interactive-normal: #{$black};
+        --interactive-normal: #{$text};
         --interactive-hover: #{$white};
         --interactive-active: #{$white};
 

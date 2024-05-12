@@ -7,14 +7,14 @@
     :is(&, &:hover, &:active, &:disabled, &[aria-disabled="true"]) {
         &:is(.colorBrand__27d57, .colorPrimary_ebe632) {
             color: $white;
-            background: $black;
+            background: $text;
         }
     }
 
     &.button__581d0 {
         &:disabled,
         &[aria-disabled="true"] {
-            color: $grey;
+            color: $text-muted;
             opacity: 1;
         }
     }
@@ -23,6 +23,6 @@
 // Text only
 .lookLink_a2da25.lookLink_a2da25 {
     &.colorPrimary_ebe632 {
-        color: $black;
+        color: $text;
     }
 }
