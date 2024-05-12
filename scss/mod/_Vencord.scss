@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 // Vencord
 
 // VencordToolbox in header
@@ -6,5 +8,14 @@
         .toolbar__62fb5 &::after {
             content: "Vencord Toolbox";
         }
+    }
+}
+
+// Vencord notifications
+.vc-notification-container {
+    // Notification card
+    @at-root .vc-notification-root {
+        background: $whitest;
+        box-shadow: var(--elevation-high);
     }
 }
