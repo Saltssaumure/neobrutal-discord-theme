@@ -16,5 +16,10 @@
   "type": "replugged-theme",
   "main": "scss/brutal.scss",
   "source": "https://github.com/Saltssaumure/neobrutal-discord-theme",
-  "image": "https://saltssaumure.github.io/neobrutal-discord-theme/preview/discord.avif"
+  "image": [
+    "https://saltssaumure.github.io/neobrutal-discord-theme/preview/light.avif",
+    "https://saltssaumure.github.io/neobrutal-discord-theme/preview/dark.avif",
+    "https://saltssaumure.github.io/neobrutal-discord-theme/preview/customlight.avif",
+    "https://saltssaumure.github.io/neobrutal-discord-theme/preview/customdark.avif"
+  ]
 }

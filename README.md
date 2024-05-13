@@ -1,5 +1,7 @@
 [light]:            https://saltssaumure.github.io/neobrutal-discord-theme/preview/light.avif
 [dark]:             https://saltssaumure.github.io/neobrutal-discord-theme/preview/dark.avif
+[customlight]:      https://saltssaumure.github.io/neobrutal-discord-theme/preview/customlight.avif
+[customdark]:       https://saltssaumure.github.io/neobrutal-discord-theme/preview/customdark.avif
 
 [css-color]:        https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
 [discord]:          https://discord.gg/uy8nKQVatp
@@ -33,9 +35,9 @@
 
 ***Neobrutalism brought to Discord.***
 
-| Light mode                                                      | Dark mode                                                     |
-| --------------------------------------------------------------- | ------------------------------------------------------------- |
-| ![Screenshot of Neobrutal light mode applied to Discord][light] | ![Screenshot of Neobrutal dark mode applied to Discord][dark] |
+|           Light mode           |          Dark mode           |
+| :----------------------------: | :--------------------------: |
+| ![Neobrutal light mode][light] | ![Neobrutal dark mode][dark] |
 
 ## Installation
 
@@ -61,7 +63,7 @@
 ### [Vencord][Vencord]
 #### Local
 1. Download `Neobrutal.theme.css`:
-    - [BetterDiscord store][release-bd]
+    <!-- - [BetterDiscord store][release-bd] -->
     - [GitHub][release-bd-gh]
 2. Place the file in the themes folder:
     - `Settings` > `Vencord` > `Themes` > `Local Themes` > `Open Themes Folder`
@@ -71,6 +73,10 @@
     - `https://saltssaumure.github.io/neobrutal-discord-theme/Neobrutal.theme.css`
 
 ## Customisation
+
+|                   Light mode                    |                   Dark mode                   |
+| :---------------------------------------------: | :-------------------------------------------: |
+| ![Customised Neobrutal light mode][customlight] | ![Customised Neobrutal dark mode][customdark] |
 
 | Description              | Variable name              | Valid values             | Default light | Default dark |
 | ------------------------ | -------------------------- | ------------------------ | ------------- | ------------ |
