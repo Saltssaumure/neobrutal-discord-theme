@@ -1,4 +1,5 @@
 @use "../vars" as *;
+@use "../funcs" as *;
 
 // Buttons
 
@@ -8,6 +9,24 @@
         &:is(.colorBrand__27d57, .colorPrimary_ebe632) {
             color: $white;
             background: $text;
+        }
+        &.colorRed__5a617 {
+            color: $white;
+            @at-root #{$appMount} {
+                --button-danger-background: #{$accent};
+                --button-danger-background-hover: #{$accent};
+                --button-danger-background-active: #{$accent};
+                --button-danger-background-disabled: #{transparentize($accent, 60%)};
+            }
+        }
+        &.colorGreen__75c93 {
+            color: $white;
+            @at-root #{$appMount} {
+                --button-positive-background: #{$accent};
+                --button-positive-background-hover: #{$accent};
+                --button-positive-background-active: #{$accent};
+                --button-positive-background-disabled: #{transparentize($accent, 60%)};
+            }
         }
     }
 
@@ -20,9 +39,70 @@
     }
 }
 
+// Outlined
+.lookOutlined__014b5 {
+    border-width: 2px;
+
+    &.colorRed__5a617 {
+        @at-root #{$appMount} {
+            --button-outline-danger-background: transparent;
+            --button-outline-danger-border: #{$accent};
+            --button-outline-danger-text: #{$accent};
+
+            --button-outline-danger-background-hover: #{$accent};
+            --button-outline-danger-border-hover: #{$accent};
+            --button-outline-danger-text-hover: #{$white};
+
+            --button-outline-danger-background-active: #{$accent};
+            --button-outline-danger-border-active: #{$accent};
+            --button-outline-danger-text-active: #{$white};
+        }
+    }
+    &.colorGreen__75c93 {
+        @at-root #{$appMount} {
+            --button-outline-positive-background: transparent;
+            --button-outline-positive-border: #{$accent};
+            --button-outline-positive-text: #{$accent};
+
+            --button-outline-positive-background-hover: #{$accent};
+            --button-outline-positive-border-hover: #{$accent};
+            --button-outline-positive-text-hover: #{$white};
+
+            --button-outline-positive-background-active: #{$accent};
+            --button-outline-positive-border-active: #{$accent};
+            --button-outline-positive-text-active: #{$white};
+        }
+    }
+    &.colorBrand__27d57 {
+        @at-root #{$appMount} {
+            --button-outline-brand-background: transparent;
+            --button-outline-brand-border: #{$text};
+            --button-outline-brand-text: #{$text};
+
+            --button-outline-brand-background-hover: #{$text};
+            --button-outline-brand-border-hover: #{$text};
+            --button-outline-brand-text-hover: #{$white};
+
+            --button-outline-brand-background-active: #{$text};
+            --button-outline-brand-border-active: #{$text};
+            --button-outline-brand-text-active: #{$white};
+        }
+    }
+}
+
 // Text only
 .lookLink_a2da25.lookLink_a2da25 {
     &.colorPrimary_ebe632 {
         color: $text;
+    }
+}
+
+// Inverted
+.lookInverted_a299dc {
+    :is(&, &:hover, &:active, &:disabled, &[aria-disabled="true"]) {
+        &.colorBrand__27d57 {
+            color: $text;
+            background: $white;
+        }
     }
 }

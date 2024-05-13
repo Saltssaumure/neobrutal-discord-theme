@@ -1,0 +1,24 @@
+@use "../../vars" as *;
+
+// Search bar
+@at-root .container__33507 {
+    border: 2px solid $black;
+
+    --interactive-normal: #{$white};
+    --interactive-hover: #{$white};
+
+    @at-root .inner__999f6 {
+        padding: 0;
+        gap: $border-width;
+        background: $black;
+
+        // Text input
+        @at-root .input__48d49 {
+            background: $white;
+        }
+
+        // Search icon
+        .iconLayout__67261 {
+        }
+    }
+}

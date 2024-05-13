@@ -1,0 +1,62 @@
+@use "../../../vars" as *;
+
+// Billing
+
+// Payment options
+// Default indicator
+#{$appMount} .defaultIndicator_b89fc1 {
+    background: $accent;
+    color: $white;
+}
+
+// Reset items
+#{$appMount} {
+    .paginator__28ba5,
+    .paymentPane__541d7,
+    .summaryInfo__3df8a,
+    .payment_f27ac6,
+    .codeRedemptionRedirect_b3eca7,
+    .expandedInfo_efc786 {
+        background: unset;
+        color: $text;
+    }
+
+    .bottomDivider_c85b47 {
+        border-bottom: 2px solid $grey;
+    }
+}
+
+// Transaction history
+.paymentPane__541d7 {
+    // Payment history item
+    @at-root .hoverablePayment__4ff3b:not(:has(+ .hoverablePayment__4ff3b)) {
+        border-bottom: 0;
+    }
+
+    // Navigation
+    @at-root .pageActions_ccda85 {
+        border: $border-width solid $black;
+        padding: 0;
+        margin: 20px 0;
+        background: $black;
+        gap: $border-width;
+        --interactive-hover: #{$black};
+
+        @at-root :is(.pageButtonPrev__9c384, .pageIndicator__1821d, .pageButtonNext__13132) {
+            border: 0;
+            background: $black;
+            color: $white;
+        }
+
+        @at-root :is(.pageButtonPrev__9c384, .pageButtonNext__13132):not(.disabled__82158) {
+            &:hover {
+                background: $white;
+            }
+        }
+    }
+}
+
+// Note
+#{$appMount} .codeRedemptionRedirect_b3eca7 {
+    border: none;
+}

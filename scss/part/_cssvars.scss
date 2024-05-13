@@ -23,6 +23,7 @@
     // Text
     --text-normal: #{$text};
     --text-muted: #{$text-muted};
+    --text-positive: #{$text};
     --header-primary: #{$text};
     --header-secondary: #{$text};
     --embed-title: #{$text};
@@ -41,9 +42,6 @@
 
     // Danger
     --status-danger: #{$accent};
-    --button-danger-background: #{$accent};
-    --button-danger-background-hover: #{$accent};
-    --button-danger-background-active: #{$accent};
 
     // Elevation shadow
     --elevation-stroke: 1px 1px #{transparentize($accent, 50%)};

@@ -1,0 +1,22 @@
+@use "../../vars" as *;
+
+// Toggle
+.container__2ed72 {
+    color: $text;
+    background: currentColor !important;
+
+    // Checked
+    &.checked__36fdc {
+        color: $accent;
+    }
+
+    // Switch
+    @at-root .slider__41d94 {
+        rect {
+            fill: $white;
+        }
+        path {
+            fill: currentColor;
+        }
+    }
+}

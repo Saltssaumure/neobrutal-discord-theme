@@ -1,0 +1,15 @@
+@use "../../vars" as *;
+@use "../../mixins" as *;
+
+// Radio bar with long description
+// Radio item
+.item_b7fb7e {
+    --interactive-hover: #{$white};
+    --interactive-active: #{$white};
+    --background-modifier-hover: #{$text};
+    @include raise;
+
+    @at-root .radioBar__70669 {
+        border-left-width: $gap-width;
+    }
+}

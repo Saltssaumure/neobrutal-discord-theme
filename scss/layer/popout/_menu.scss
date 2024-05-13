@@ -2,6 +2,8 @@
 
 // Menu
 .menu__088f7 {
+    background: var(--background-floating);
+
     // Group separator
     @at-root .separator__174fc {
         border-bottom: none;
@@ -12,7 +14,7 @@
         padding: 0;
         @at-root .customItem__3f15f {
             .button_bfb8e1 {
-                background: $whitest;
+                background: var(--background-floating);
 
                 &:hover {
                     background: $text;
@@ -29,14 +31,14 @@
     &.focused_dcafb9,
     // Active
     &:active:not(.hideInteraction__0b569) {
-        color: $whitest;
+        color: var(--background-floating);
         background: $text;
 
         .subtext__694e2,
         .checkbox__378d3,
         .radioSelection__41d1e,
         .caret_ce50ce {
-            color: $text-muted;
+            color: var(--background-floating);
         }
 
         path {
@@ -55,7 +57,7 @@
     }
 
     .check__8d1bd {
-        color: $whitest;
+        color: var(--background-floating);
     }
 }
 
@@ -71,7 +73,7 @@
 .colorBrand__9bb0f.colorBrand__9bb0f {
     // Focused
     &.focused_dcafb9 {
-        color: $whitest;
+        color: var(--background-floating);
     }
     // Unfocused
     &:not(.focused_dcafb9) {

@@ -4,13 +4,29 @@
 @mixin channellist-topper($left) {
     text-align: center;
     position: fixed;
-    top: 0;
+    top: 6px;
     left: $left;
     width: calc($channellist-width / 2);
-    height: 36px;
+    height: 24px;
     box-sizing: border-box;
     line-height: 1.6rem;
     font-size: 1rem;
-    border: solid $black;
-    border-width: $gap-width 0 calc($gap-width / 2);
+    z-index: 1;
+    -webkit-app-region: drag;
+}
+
+// Raise
+@mixin raise($shadow: var(--elevation-medium)) {
+    transition: 0.2s ease-out;
+    transition-property: box-shadow, transform;
+
+    &:hover {
+        box-shadow: $shadow;
+        transform: translateY(-2px);
+    }
+    &:active {
+        box-shadow: none;
+        transform: none;
+        transition-duration: 0;
+    }
 }

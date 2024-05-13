@@ -1,22 +1,14 @@
 @use "../../vars" as *;
-@use "../../mixins" as *;
 
+// Mod title
+
+// Hide existing wordmark
 .wordmark__5b8c9 {
-    &::after {
-        @include channellist-topper($left: $serverlist-width);
-        content: var(--modtitle-text);
-        font-family: var(--font-headline);
-        background: $accent;
-        color: $white;
-        -webkit-app-region: drag;
-    }
-
+    pointer-events: unset;
+    padding: 0;
     > svg {
         display: none;
     }
-
-    pointer-events: unset;
-    padding: 0;
 }
 
 :root {

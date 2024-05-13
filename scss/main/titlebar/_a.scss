@@ -1,4 +1,6 @@
 @use "../../vars" as *;
+@use "../../mixins" as *;
+
 // Titlebar
 .withFrame__5e49e {
     height: 0;
@@ -13,5 +15,26 @@
         --background-modifier-hover: #{$white};
         background: $black;
         --status-danger: #{$accent};
+    }
+}
+
+// Pseudo titlebar
+.bg__12180 {
+    // Mod title
+    &::before {
+        @include channellist-topper($left: $serverlist-width);
+        content: var(--modtitle-text);
+        font-family: var(--font-headline);
+        background: $accent;
+        color: $white;
+    }
+
+    // Mode indicator
+    &::after {
+        @include channellist-topper($left: calc($serverlist-width + ($channellist-width / 2)));
+        content: var(--modeindicator-text);
+        font-family: var(--font-primary);
+        background: var(--background-tertiary);
+        color: var(--text-muted);
     }
 }
