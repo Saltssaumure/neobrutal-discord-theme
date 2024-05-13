@@ -1,0 +1,50 @@
+@use "../../vars" as *;
+
+// Slider
+.sliderContainer__1d624 {
+    // Size (full)
+    .slider__22e99 {
+        // Track
+        @at-root .track_b31f5a {
+            // Grabber
+            @at-root .grabber_e3daf3 {
+                background: $accent;
+                box-shadow: var(--elevation-low);
+                border: none;
+            }
+
+            // Ticks
+            @at-root .mark_e7d3b1 {
+                // Number
+                @at-root .markValue_c91c4e {
+                }
+                // Dash
+                .markDash__54545 {
+                    background: $grey;
+                }
+            }
+        }
+
+        // Progress bar
+        @at-root #{$appMount} .bar_e58961 {
+            background: $grey;
+            // Done amount
+            @at-root .barFill__1f56b {
+                background: $accent;
+            }
+        }
+    }
+
+    //Mini
+    @at-root .mini_d6d84c {
+        // Mini grabber
+        .grabber_e3daf3 {
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+    // Positioning
+    @at-root .slider__28a57 {
+    }
+}

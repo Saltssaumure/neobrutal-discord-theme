@@ -1,0 +1,21 @@
+@use "../vars" as *;
+
+// Members list
+.container_f79ab4 {
+    @at-root .membersWrap__5ca6b {
+        @at-root .members__573eb {
+            @at-root .content__690c5 {
+                // Member
+                @at-root .member_b44d5d {
+                    --interactive-hover: #{$white};
+
+                    // User activity or status
+                    @at-root .activityText__31c22,
+                        .icon__1ab4f {
+                        color: $text-muted;
+                    }
+                }
+            }
+        }
+    }
+}

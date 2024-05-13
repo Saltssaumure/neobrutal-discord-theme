@@ -1,0 +1,21 @@
+@use "../../../vars" as *;
+
+// Appearance
+
+// Theme selection
+.themeSelectionContainer__26fcc {
+    @at-root .selectionCircle_aa3fcd {
+        box-shadow:
+            inset 0 0 0 2px $accent,
+            inset 0 0 0 4px $white;
+
+        @at-root .checkmarkCircle_b1b1cc {
+            circle {
+                fill: $white !important;
+            }
+            .checkmark__5b7ba {
+                color: $accent;
+            }
+        }
+    }
+}

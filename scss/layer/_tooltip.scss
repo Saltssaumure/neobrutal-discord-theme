@@ -1,0 +1,21 @@
+@use "../vars" as *;
+
+// Tooltip
+.tooltip__7b090 {
+    // Pointer
+    .tooltipPointer_f7411c {
+    }
+    // Content
+    .tooltipContent_adb6d5 {
+    }
+}
+
+// Inverted colour tooltip
+#{$appMount} .tooltipGrey__3108e {
+    background: $text;
+    color: var(--background-floating);
+
+    .tooltipPointer_f7411c {
+        border-top-color: $text;
+    }
+}

@@ -2,16 +2,132 @@
 
 // Settings
 .baseLayer__2b890 + .layer_f7d46a {
-    z-index: 3001;
+    padding-top: 0;
+    top: 0;
+    z-index: 100;
 
+    // Pseudo titlebar and drag area
     &::before {
         content: "";
         display: block;
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 16px;
-        height: 84px;
+        background: $black;
+        inset: 0 36px * 3 auto 0;
+        height: 36px;
         -webkit-app-region: drag;
+    }
+
+    @at-root .standardSidebarView__12528 {
+        .platform-win & {
+            top: 32px;
+        }
+
+        // Left side
+        @at-root .sidebarRegion__36437 {
+            @at-root .side_b4b3f6 {
+                gap: $border-width;
+
+                // Item
+                .item__48dda {
+                    margin: 0;
+
+                    &.themed_b957e8 {
+                        // Selected or hovered
+                        &:is(.selected_a523ff, :hover:not(.disabled__2717e), :active) {
+                            background: $text;
+                            color: $white;
+                        }
+                    }
+
+                    @at-root .premiumLabel__68f78 {
+                        path {
+                            fill: currentColor;
+                        }
+                    }
+                }
+
+                // Divider
+                .separator_d14fb1 {
+                    height: 2px;
+                    background: $grey;
+                }
+
+                // Social media links
+                @at-root .socialLinks_dbdd6f {
+                    display: flex;
+                    gap: $border-width;
+                    justify-content: center;
+
+                    // Link
+                    @at-root .link_cebd7b {
+                        display: block;
+                        padding: $gap-width;
+                        margin-right: 0;
+                        height: 32px;
+                        &:hover {
+                            color: $white;
+                            background: $text;
+                        }
+
+                        @at-root .foreground__635e9 {
+                            transition: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Right side
+        @at-root .contentRegion__08eba {
+            // Controls
+            .toolsContainer__4e6ad {
+                // Exit settings
+                @at-root .container__3529f {
+                    @at-root .closeButton__8177f {
+                        --interactive-hover: #{$white};
+                        --interactive-active: #{$white};
+
+                        &:hover {
+                            border-color: $text;
+                        }
+
+                        box-shadow: var(--elevation-medium);
+                    }
+                }
+            }
+
+            // Settings content
+            // Divider
+            .divider__14bb6 {
+                border: 1px solid $grey;
+            }
+
+            // Tab bar
+            @at-root .top_fae1fa {
+                border: $border-width solid $black;
+                background: $black;
+                justify-content: space-around;
+                gap: $border-width;
+                padding: 0;
+
+                .item__48dda {
+                    flex: 1 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: $black;
+                    color: $white;
+                    margin: 0;
+                    padding: 0;
+                    height: 36px;
+
+                    &:is(:hover, :active, .selected_a523ff) {
+                        background: $white;
+                        color: $black;
+                        border-bottom: 0;
+                    }
+                }
+            }
+        }
     }
 }

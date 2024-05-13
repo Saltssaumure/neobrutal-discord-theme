@@ -1,0 +1,16 @@
+@use "../../vars" as *;
+
+// Post actions
+.buttonContainer__6de7e {
+    @at-root .container__2f489 {
+        @at-root .wrapper__4e6b6 {
+            background-color: var(--background-floating);
+
+            // Action
+            @at-root .button_d4bf9b {
+                --interactive-hover: #{$whitest};
+                --interactive-active: #{$whitest};
+            }
+        }
+    }
+}

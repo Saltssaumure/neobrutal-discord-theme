@@ -1,0 +1,13 @@
+@use "../../../vars" as *;
+
+// Authorised Apps
+
+// App card
+.cardPrimary__1ee6a {
+    background: $white;
+    border: 0;
+
+    &.outline__16075 {
+        border-left: $gap-width solid $black;
+    }
+}

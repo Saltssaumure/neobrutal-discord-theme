@@ -1,10 +1,23 @@
+@use "../vars" as *;
+
 // Vencord
 
 // VencordToolbox in header
 .vc-toolbox-btn {
+    order: -1;
+
     @container (min-width: 1000px) {
         .toolbar__62fb5 &::after {
             content: "Vencord Toolbox";
         }
+    }
+}
+
+// Vencord notifications
+.vc-notification-container {
+    // Notification card
+    @at-root .vc-notification-root {
+        background: $whitest;
+        box-shadow: var(--elevation-high);
     }
 }

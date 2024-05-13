@@ -1,0 +1,15 @@
+@use "../../../vars" as *;
+
+// Connections
+
+// Add accounts
+.accountAddInner__50785 {
+    &:hover {
+        color: $white;
+    }
+}
+
+// Connection card
+.connection__6dbd8 {
+    border-left: $gap-width solid $black;
+}

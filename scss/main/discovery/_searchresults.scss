@@ -21,6 +21,8 @@
             }
 
             @at-root .input_f27786 {
+                color: $text;
+
                 &::placeholder {
                     color: $text-muted;
                 }
@@ -78,6 +80,8 @@
 .pageControlContainer__86479 {
     background: $black;
     --header-primary: #{$white};
+    --text-normal: #{$white};
+
     @at-root .pageButton_bf9853 {
         &:hover {
             color: $black;
