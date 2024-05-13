@@ -4,3 +4,9 @@
 .popout_a6e77f {
     background: $whitest;
 }
+
+// Toolbar popouts
+.browser_fa9cea,
+.messagesPopoutWrap__10dd1 {
+    max-height: calc(100vh - 84px) !important;
+}

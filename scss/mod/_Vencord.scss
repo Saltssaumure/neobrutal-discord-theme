@@ -4,6 +4,8 @@
 
 // VencordToolbox in header
 .vc-toolbox-btn {
+    order: -1;
+
     @container (min-width: 1000px) {
         .toolbar__62fb5 &::after {
             content: "Vencord Toolbox";
