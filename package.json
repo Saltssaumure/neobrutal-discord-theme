@@ -4,7 +4,7 @@
   "description": "A Neobrutalist Discord theme.",
   "repository": "github:Saltssaumure/neobrutal-discord-theme",
   "author": "Saltssaumure <themes@saltssaumure.net>",
-  "license": "GPL-3.0",
+  "license": "AGPL-3.0-or-later",
   "private": true,
   "type": "module",
   "scripts": {
