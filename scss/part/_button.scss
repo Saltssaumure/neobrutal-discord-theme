@@ -4,13 +4,13 @@
 // Buttons
 
 // Solid fill
-.lookFilled__950dd {
+.lookFilled_dd4f85 {
     :is(&, &:hover, &:active, &:disabled, &[aria-disabled="true"]) {
-        &:is(.colorBrand__27d57, .colorPrimary_ebe632) {
+        &:is(.colorBrand_dd4f85, .colorPrimary_dd4f85) {
             color: $white;
             background: $text;
         }
-        &.colorRed__5a617 {
+        &.colorRed_dd4f85 {
             color: $white;
             @at-root #{$appMount} {
                 --button-danger-background: #{$accent};
@@ -19,7 +19,7 @@
                 --button-danger-background-disabled: #{transparentize($accent, 60%)};
             }
         }
-        &.colorGreen__75c93 {
+        &.colorGreen_dd4f85 {
             color: $white;
             @at-root #{$appMount} {
                 --button-positive-background: #{$accent};
@@ -30,7 +30,7 @@
         }
     }
 
-    &.button__581d0 {
+    &.button_dd4f85 {
         &:disabled,
         &[aria-disabled="true"] {
             color: $text-muted;
@@ -40,10 +40,10 @@
 }
 
 // Outlined
-.lookOutlined__014b5 {
+.lookOutlined_dd4f85 {
     border-width: 2px;
 
-    &.colorRed__5a617 {
+    &.colorRed_dd4f85 {
         @at-root #{$appMount} {
             --button-outline-danger-background: transparent;
             --button-outline-danger-border: #{$accent};
@@ -58,7 +58,7 @@
             --button-outline-danger-text-active: #{$white};
         }
     }
-    &.colorGreen__75c93 {
+    &.colorGreen_dd4f85 {
         @at-root #{$appMount} {
             --button-outline-positive-background: transparent;
             --button-outline-positive-border: #{$accent};
@@ -73,7 +73,7 @@
             --button-outline-positive-text-active: #{$white};
         }
     }
-    &.colorBrand__27d57 {
+    &.colorBrand_dd4f85 {
         @at-root #{$appMount} {
             --button-outline-brand-background: transparent;
             --button-outline-brand-border: #{$text};
@@ -91,8 +91,8 @@
 }
 
 // Text only
-.lookLink_a2da25.lookLink_a2da25 {
-    &.colorPrimary_ebe632 {
+.lookLink_dd4f85.lookLink_dd4f85 {
+    &.colorPrimary_dd4f85 {
         color: $text;
     }
 }
@@ -100,7 +100,7 @@
 // Inverted
 .lookInverted_a299dc {
     :is(&, &:hover, &:active, &:disabled, &[aria-disabled="true"]) {
-        &.colorBrand__27d57 {
+        &.colorBrand_dd4f85 {
             color: $text;
             background: $white;
         }

@@ -1,9 +1,9 @@
 @use "../vars" as *;
 
 // Search results
-.searchResultsWrap__2e184 {
+.searchResultsWrap_c2b47d {
     // Search header
-    @at-root .searchHeader__4d70e {
+    @at-root .searchHeader_b7c924 {
         background: $black;
 
         --header-primary: #{$white};
@@ -16,9 +16,9 @@
     }
 
     // Search results
-    .scroller__5f036 {
+    .scroller_c2b47d {
         // Jump to button
-        .button_ef08e7 {
+        .button_ddc613 {
             background: $black;
             color: $white;
         }

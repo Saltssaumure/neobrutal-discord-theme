@@ -2,12 +2,12 @@
 @use "../../mixins" as *;
 
 // Titlebar
-.withFrame__5e49e {
+.withFrame_a934d8 {
     height: 0;
     margin-top: 0;
 
     // Windows control buttons
-    @at-root .winButton_f17fb6 {
+    @at-root .winButton_a934d8 {
         top: 0;
         border: $border-width solid $black;
         --interactive-normal: #{$white};
@@ -19,7 +19,7 @@
 }
 
 // Pseudo titlebar
-.bg__12180 {
+.bg_d4b6c5 {
     // Mod title
     &::before {
         @include channellist-topper($left: $serverlist-width);

@@ -2,13 +2,13 @@
 
 // Search results
 // Search bar and language container
-.container_abed14.searchPage_c33350 {
+.container_f69601.searchPage_f69601 {
     background: $black;
     border: $border-width solid $black;
     gap: $border-width;
 
     // Search bar
-    .search_e47903 {
+    .search_f69601 {
         max-width: unset;
 
         @at-root #{$appMount} .searchBox__56feb {
@@ -20,7 +20,7 @@
                 border-color: unset;
             }
 
-            @at-root .input_f27786 {
+            @at-root .input_f8bc55 {
                 color: $text;
 
                 &::placeholder {
@@ -35,13 +35,13 @@
     }
 
     // Language selector
-    @at-root .languageSelector_f25b72 {
+    @at-root .languageSelector_f69601 {
         margin-left: 0;
     }
 }
 
 // Server categories bar
-.categories_bbef0d {
+.categories_f69601 {
     background: $black;
     gap: $border-width;
     border: $border-width solid $black;
@@ -49,12 +49,12 @@
     max-width: unset;
 
     // Category
-    @at-root .categoryPill_c6ae1b {
+    @at-root .categoryPill_f69601 {
         margin: 0;
         --text-muted: #{$white};
 
-        &.selected_b5f19b,
-        &:hover:not(.selected_b5f19b) {
+        &.selected_f69601,
+        &:hover:not(.selected_f69601) {
             background: $white;
             --white-500: #{$black};
             --text-muted: #{$black};
@@ -63,31 +63,31 @@
 }
 
 // Results
-.results__7a0d3 {
+.results_e37a20 {
     max-width: unset;
 
-    @at-root .guildList_d05b32 {
+    @at-root .guildList_a3a4ce {
         max-width: unset;
 
         // Separator
-        @at-root .separator__16faf {
+        @at-root .separator_e825f6 {
             border-top: 0;
         }
     }
 }
 
 // Navigation
-.pageControlContainer__86479 {
+.pageControlContainer_b48941 {
     background: $black;
     --header-primary: #{$white};
     --text-normal: #{$white};
 
-    @at-root .pageButton_bf9853 {
+    @at-root .pageButton_b48941 {
         &:hover {
             color: $black;
         }
-        &.activeButton__70b70,
-        &.activeButton__70b70:hover {
+        &.activeButton_b48941,
+        &.activeButton_b48941:hover {
             background: $white;
             color: $black;
         }

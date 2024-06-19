@@ -1,17 +1,17 @@
 @use "../../vars" as *;
 
 // Toggle
-.container__2ed72 {
+.container_cebd1c {
     color: $text;
     background: currentColor !important;
 
     // Checked
-    &.checked__36fdc {
+    &.checked_cebd1c {
         color: $accent;
     }
 
     // Switch
-    @at-root .slider__41d94 {
+    @at-root .slider_cebd1c {
         rect {
             fill: $white;
         }

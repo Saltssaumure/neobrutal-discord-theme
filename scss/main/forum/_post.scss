@@ -1,11 +1,11 @@
 @use "../../vars" as *;
 
 // Post opened
-.scrollerInner__37fee {
+.scrollerInner_e2e187 {
     overflow: unset;
 
     // Post actions bar
-    @at-root .container__68e43 {
+    @at-root .container_b385c8 {
         box-shadow: none;
         background: $black;
 
@@ -13,12 +13,12 @@
         --interactive-hover: #{$black};
 
         // Any button
-        @at-root :is(.buttonInner__865de, .addReactButton__4342f) {
+        @at-root :is(.buttonInner_b385c8, .addReactButton_b385c8) {
             background: $black;
             color: $white;
 
             // Activated
-            &:is(.active_f1266e, .active_f2e487) {
+            &:is(.active_b385c8, .active_f61c73) {
                 :is(&, &:hover) {
                     background: $white;
                     color: $black;
@@ -27,27 +27,27 @@
         }
 
         // Post reaction
-        .reaction_ef7e09 {
+        .reaction_f61c73 {
             background: $black;
 
-            &.reactionMe__9fc5c {
+            &.reactionMe_f61c73 {
                 background: $white;
                 border: none;
             }
 
-            .reactionCount_b780c8 {
+            .reactionCount_f61c73 {
                 color: $black;
             }
         }
     }
 
     // Divider
-    @at-root .divider__4df9f {
+    @at-root .divider_af45f8 {
         display: none;
     }
 
     // OP tag
-    .botTagOP_fd6360 {
+    .botTagOP_a02df3 {
         background: $accent;
         color: $white;
     }

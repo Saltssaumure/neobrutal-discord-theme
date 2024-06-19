@@ -3,15 +3,15 @@
 // Friends
 
 // Friend list
-.peopleColumn__0c784 {
+.peopleColumn_c2739c {
     // Friend
-    @at-root .peopleListItem_dab480 {
+    @at-root .peopleListItem_d51464 {
         border-top: 0;
 
         --background-modifier-active: #{$white};
 
         &:hover,
-        &.active__6b8ff {
+        &.active_d51464 {
             background: $black;
             --header-primary: #{$white};
             --header-secondary: #{$white};
@@ -24,9 +24,9 @@
         }
 
         // Actions
-        @at-root .actions_bd37ed {
+        @at-root .actions_e05dae {
             // Action button
-            .actionButton__2b4bb {
+            .actionButton_e01b91 {
                 // Hide message button
                 &:first-child {
                     display: none;
@@ -37,11 +37,11 @@
 }
 
 // Active now
-.scroller__7c25e {
+.scroller_bf550a {
     border-left: 0;
 
     // Cards
-    @at-root .wrapper__3c6d5 {
+    @at-root .wrapper_cd82a7 {
         border: 0;
     }
 }

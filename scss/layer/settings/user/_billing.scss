@@ -4,37 +4,37 @@
 
 // Payment options
 // Default indicator
-#{$appMount} .defaultIndicator_b89fc1 {
+#{$appMount} .defaultIndicator_ede133 {
     background: $accent;
     color: $white;
 }
 
 // Reset items
 #{$appMount} {
-    .paginator__28ba5,
-    .paymentPane__541d7,
-    .summaryInfo__3df8a,
-    .payment_f27ac6,
-    .codeRedemptionRedirect_b3eca7,
-    .expandedInfo_efc786 {
+    .paginator_f66684,
+    .paymentPane_f66684,
+    .summaryInfo_a28a08,
+    .payment_a28a08,
+    .codeRedemptionRedirect_cb70f4,
+    .expandedInfo_a28a08 {
         background: unset;
         color: $text;
     }
 
-    .bottomDivider_c85b47 {
+    .bottomDivider_f66684 {
         border-bottom: 2px solid $grey;
     }
 }
 
 // Transaction history
-.paymentPane__541d7 {
+.paymentPane_f66684 {
     // Payment history item
-    @at-root .hoverablePayment__4ff3b:not(:has(+ .hoverablePayment__4ff3b)) {
+    @at-root .hoverablePayment_a28a08:not(:has(+ .hoverablePayment_a28a08)) {
         border-bottom: 0;
     }
 
     // Navigation
-    @at-root .pageActions_ccda85 {
+    @at-root .pageActions_cb56ee {
         border: $border-width solid $black;
         padding: 0;
         margin: 20px 0;
@@ -42,13 +42,13 @@
         gap: $border-width;
         --interactive-hover: #{$black};
 
-        @at-root :is(.pageButtonPrev__9c384, .pageIndicator__1821d, .pageButtonNext__13132) {
+        @at-root :is(.pageButtonPrev_cb56ee, .pageIndicator_cb56ee, .pageButtonNext_cb56ee) {
             border: 0;
             background: $black;
             color: $white;
         }
 
-        @at-root :is(.pageButtonPrev__9c384, .pageButtonNext__13132):not(.disabled__82158) {
+        @at-root :is(.pageButtonPrev_cb56ee, .pageButtonNext_cb56ee):not(.disabled_cb56ee) {
             &:hover {
                 background: $white;
             }
@@ -57,6 +57,6 @@
 }
 
 // Note
-#{$appMount} .codeRedemptionRedirect_b3eca7 {
+#{$appMount} .codeRedemptionRedirect_cb70f4 {
     border: none;
 }

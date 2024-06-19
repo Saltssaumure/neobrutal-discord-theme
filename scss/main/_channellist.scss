@@ -1,24 +1,24 @@
 @use "../vars" as *;
 
 // Channel list
-.sidebar_e031be {
+.sidebar_a4d4d9 {
     // Move from top to give space
     border-top: $searchbar-height solid $black;
 
     // Header
-    @at-root .header__77c95 {
+    @at-root .header_fd6364 {
         background: $black;
         --header-primary: #{$white};
     }
 
     // DM header (Find or start a conversation)
-    @at-root .searchBar__621ec {
+    @at-root .searchBar_f0963d {
         box-shadow: none;
         background: $black;
         padding: calc($gap-width / 2) 0 $gap-width;
         box-sizing: border-box;
 
-        .searchBarComponent__8f95f {
+        .searchBarComponent_f0963d {
             height: 100%;
             padding: 0;
             text-align: center;
@@ -34,11 +34,11 @@
     }
 
     // Category
-    @at-root .containerDefault_e3b32b {
+    @at-root .containerDefault_a08117 {
     }
 
     // Channel
-    @at-root .containerDefault_ae2ea4 {
+    @at-root .containerDefault_f6f816 {
         --interactive-normal: #{$text};
         --interactive-hover: #{$white};
         --interactive-active: #{$white};
@@ -46,76 +46,76 @@
         --text-muted: var(--interactive-muted);
 
         // Channel background
-        @at-root :is(.link_ddbb36, .users__65981, .total_c01838) {
+        @at-root :is(.link_d8bfb3, .users_a5bc92, .total_a5bc92) {
             // Hovered channels
-            @at-root .wrapper__612a5:hover &,
-                .modeMuted_f0a72e:hover &,
-                .modeUnreadImportant__35358:hover & {
+            @at-root .wrapper_d8bfb3:hover &,
+                .modeMuted_d8bfb3:hover &,
+                .modeUnreadImportant_d8bfb3:hover & {
                 background: var(--background-modifier-hover);
             }
 
             // Selected and connected channels
-            @at-root .modeSelected__473f1 &,
-                .modeSelected__473f1:hover &,
-                .modeConnected__52a8f &,
-                .modeConnected__52a8f:hover & {
+            @at-root .modeSelected_d8bfb3 &,
+                .modeSelected_d8bfb3:hover &,
+                .modeConnected_d8bfb3 &,
+                .modeConnected_d8bfb3:hover & {
                 background: var(--background-modifier-selected);
             }
         }
-        @at-root .total_c01838:after {
+        @at-root .total_a5bc92:after {
             display: none;
         }
 
         // Channel icon, name, actions, voice channel status, user limit
-        @at-root :is(.icon__67ab4, .name__4eb92, .actionIcon_b149a2, .statusText_ebf535, .users__65981, .total_c01838) {
+        @at-root :is(.icon_d8bfb3, .name_d8bfb3, .actionIcon_f6f816, .statusText_e66732, .users_a5bc92, .total_a5bc92) {
             // Read and unread channels
-            @at-root .wrapper__612a5 &,
-                .modeUnreadImportant__35358 & {
+            @at-root .wrapper_d8bfb3 &,
+                .modeUnreadImportant_d8bfb3 & {
                 color: var(--interactive-normal);
             }
 
             // Muted channels
-            @at-root .modeMuted_f0a72e & {
+            @at-root .modeMuted_d8bfb3 & {
                 color: var(--interactive-muted);
             }
 
             // Hovered channels
-            @at-root .wrapper__612a5:hover &,
-                .modeMuted_f0a72e:hover &,
-                .modeUnreadImportant__35358:hover & {
+            @at-root .wrapper_d8bfb3:hover &,
+                .modeMuted_d8bfb3:hover &,
+                .modeUnreadImportant_d8bfb3:hover & {
                 color: var(--interactive-hover);
             }
 
             // Selected and connected channels
-            @at-root .modeSelected__473f1 &,
-                .modeSelected__473f1:hover &,
-                .modeConnected__52a8f &,
-                .modeConnected__52a8f:hover & {
+            @at-root .modeSelected_d8bfb3 &,
+                .modeSelected_d8bfb3:hover &,
+                .modeConnected_d8bfb3 &,
+                .modeConnected_d8bfb3:hover & {
                 color: var(--interactive-active);
             }
         }
 
         // Voice chat user mute/deafen status, username
-        @at-root :is(.icon__1e4c2, .username_a42504) {
-            .voiceUser__629a5:hover & {
+        @at-root :is(.icon_cdc675, .username_cdc675) {
+            .voiceUser_cdc675:hover & {
                 color: var(--interactive-hover);
             }
         }
 
         // Live streaming icon
-        .live_b195a5 {
+        .live_e17fae {
             color: $white;
             background: $accent !important;
         }
 
         // Unread channel
-        :has(.unread__48cf4) {
+        :has(.unread_d8bfb3) {
             $name-height: 2px;
 
-            .link_ddbb36 {
+            .link_d8bfb3 {
                 padding: 6px - $name-height 8px;
 
-                .name__4eb92 {
+                .name_d8bfb3 {
                     text-decoration: underline $accent wavy 2px;
                     text-decoration-skip-ink: none;
                     overflow-y: visible;
