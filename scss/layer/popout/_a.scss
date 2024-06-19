@@ -1,12 +1,12 @@
 @use "../../vars" as *;
 
 // Popout
-.popout_a6e77f {
+.popout_f6639d {
     background: $whitest;
 }
 
 // Toolbar popouts
-.browser_fa9cea,
-.messagesPopoutWrap__10dd1 {
+.browser_f542fc,
+.messagesPopoutWrap_ac90a2 {
     max-height: calc(100vh - 84px) !important;
 }

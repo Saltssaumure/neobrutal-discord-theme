@@ -1,7 +1,7 @@
 @use "../../vars" as *;
 
 // Header row
-@at-root .headerRow__86f2e {
+@at-root .headerRow_a6d69a {
     // Would be great if this wasn't part of the lazy loader
     // position: sticky !important;
     // top: 0;
@@ -11,64 +11,64 @@
     margin-bottom: $gap-width * 2;
 
     // Make post / search post
-    @at-root .header_b2c494 {
+    @at-root .header_a6d69a {
         background: $black;
         border: $border-width solid $black;
         --interactive-normal: #{$white};
         --interactive-hover: #{$white};
         --interactive-active: #{$white};
 
-        @at-root .container_c654d2 {
+        @at-root .container_c1668f {
             padding: 0;
 
             // Generic input
-            @at-root .form__97f5c {
+            @at-root .form_c1668f {
                 margin-right: 0;
             }
 
             // Top area
-            @at-root .formContainer__87e79 {
+            @at-root .formContainer_c1668f {
                 padding: 0;
 
                 // Search / close icon
-                @at-root .prefixElement_d6c5ac {
+                @at-root .prefixElement_c1668f {
                     margin-left: 6px;
                 }
 
                 // Text input
-                @at-root .form__97f5c {
+                @at-root .form_c1668f {
                     // Search term / post title
-                    @at-root .titleContainer_e517ed {
+                    @at-root .titleContainer_c1668f {
                         background: $white;
                         --interactive-normal: #{$black};
                         --interactive-hover: #{$black};
                         --interactive-active: #{$black};
 
-                        .title__20d69 {
+                        .title_c1668f {
                             margin: calc($gap-width / 2 + 2px) $gap-width calc($gap-width / 2 - 2px);
                         }
                     }
 
                     // Post body
-                    @at-root .bodyContainer__61b9e {
+                    @at-root .bodyContainer_c1668f {
                         background: $white;
                         padding: $gap-width;
                     }
                 }
 
                 // Attach input
-                @at-root .container__9dc79 {
+                @at-root .container_a15d29 {
                     // Placeholder
-                    @at-root .uploadInput_a6cb60 {
+                    @at-root .uploadInput_a15d29 {
                         background: $black;
 
-                        :is(&, &:hover) .uploadIcon_dd6e1a {
+                        :is(&, &:hover) .uploadIcon_a15d29 {
                             zoom: 1.5;
                         }
                     }
 
                     // File counter
-                    .badge_f7250d {
+                    .badge_a15d29 {
                         border: 0;
                         top: 0;
                         right: 0;
@@ -77,17 +77,17 @@
                     }
 
                     // Extended file preview popout
-                    @at-root .popoutContainer_dbffea {
+                    @at-root .popoutContainer_a15d29 {
                         top: -16px - $border-width;
                         right: -16px - $border-width;
 
-                        @at-root .popout__6ba23 {
+                        @at-root .popout_a15d29 {
                             background: $black;
                             padding: 0;
                             border: $border-width solid $black;
 
                             // File upload options menu
-                            .miniPopover_c76342 {
+                            .miniPopover_df1eaf {
                                 height: auto;
                             }
                         }
@@ -96,13 +96,13 @@
             }
 
             // Bottom area
-            @at-root .formContainer__87e79 + .form__97f5c {
+            @at-root .formContainer_c1668f + .form_c1668f {
                 // Tags
-                @at-root .tagsContainer__20c4f {
+                @at-root .tagsContainer_c1668f {
                     gap: 14px;
                 }
                 // Divider
-                @at-root .tagsDivider__0c01e {
+                @at-root .tagsDivider_c1668f {
                     display: none;
                 }
             }
@@ -110,13 +110,13 @@
     }
 
     // Post guidelines
-    @at-root .container__852f7 {
+    @at-root .container_ddbb27 {
         border: $border-width solid $black;
         --header-secondary: #{$black};
     }
 
     // Tags and sort posts bar
-    @at-root .tagsContainer__58760 {
+    @at-root .tagsContainer_a6d69a {
         background: $black;
         border: $border-width solid $black;
         padding: 0;
@@ -126,7 +126,7 @@
         flex-direction: row-reverse;
 
         // Sort & view
-        @at-root .sortDropdown__40a16 {
+        @at-root .sortDropdown_a6d69a {
             --interactive-normal: #{$black};
 
             &[aria-expanded="false"] {
@@ -136,21 +136,21 @@
         }
 
         // Divider of no particular purpose
-        @at-root .divider_d1051b {
+        @at-root .divider_a6d69a {
             display: none;
         }
 
         // Main tag list
-        @at-root .tagList_d00c9d {
+        @at-root .tagList_a6d69a {
             flex: 1 1 auto;
             display: flex;
             justify-content: flex-start;
 
-            @at-root .tagListInner__05bff {
+            @at-root .tagListInner_a6d69a {
                 gap: $border-width;
 
                 // Tag
-                @at-root .tag__40098.tag__40098.tag__40098.tag__40098 {
+                @at-root .tag_a6d69a.tag_a6d69a.tag_a6d69a.tag_a6d69a {
                     &:hover {
                         background: $white;
                         --text-normal: #{$black};
@@ -160,7 +160,7 @@
         }
 
         // Additional tags
-        @at-root .tagsButton__34537 {
+        @at-root .tagsButton_a6d69a {
             position: relative;
             left: unset !important;
 
@@ -171,7 +171,7 @@
                 --interactive-normal: #{$white};
             }
         }
-        @at-root .tagsButtonPlaceholder_cef034 {
+        @at-root .tagsButtonPlaceholder_a6d69a {
             display: none;
         }
     }

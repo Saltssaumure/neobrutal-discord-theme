@@ -1,19 +1,19 @@
 @use "../../vars" as *;
 
 // Server discovery
-#{$appMount} .pageWrapper_c182d3,
-.sidebar_e031be + .scroller__32e73 {
+#{$appMount} .pageWrapper_a3a4ce,
+.sidebar_a4d4d9 + .scroller_a39aa3 {
     background: $white;
     color: $text;
     border-top: 36px solid $black;
 
     // Search
-    @at-root .search_e47903 .searchBox__02d0b {
+    @at-root .search_f69601 .searchBox_f69601 {
         background: $white;
         box-shadow: none;
 
         // Text input
-        .searchBoxInput__74f29 {
+        .searchBoxInput_f69601 {
             color: $text;
 
             &::placeholder {
@@ -22,29 +22,29 @@
         }
 
         // Search icon
-        .searchIcon__58dfd {
+        .searchIcon_f69601 {
             color: $text-muted;
         }
 
-        .closeIcon_da3bc1,
-        .closeIcon_da3bc1:hover {
+        .closeIcon_f69601,
+        .closeIcon_f69601:hover {
             color: $text;
         }
     }
 
     // Servers
-    @at-root .guildList__99864 {
+    @at-root .guildList_ac51fa {
         // Server
-        @at-root .card__86773 {
+        @at-root .card_eb1ca6 {
             // Server banner
-            @at-root .splashImage__9b574 {
+            @at-root .splashImage_eb1ca6 {
                 height: 143px;
             }
         }
     }
 
     // Divider
-    .divider__6c6c1 {
+    .divider_a39aa3 {
         background: unset;
     }
 }

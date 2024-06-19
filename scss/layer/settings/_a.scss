@@ -1,7 +1,7 @@
 @use "../../vars" as *;
 
 // Settings
-.baseLayer__2b890 + .layer_f7d46a {
+.baseLayer_d4b6c5 + .layer_d4b6c5 {
     padding-top: 0;
     top: 0;
     z-index: 100;
@@ -17,29 +17,29 @@
         -webkit-app-region: drag;
     }
 
-    @at-root .standardSidebarView__12528 {
+    @at-root .standardSidebarView_c25c6d {
         .platform-win & {
             top: 32px;
         }
 
         // Left side
-        @at-root .sidebarRegion__36437 {
-            @at-root .side_b4b3f6 {
+        @at-root .sidebarRegion_c25c6d {
+            @at-root .side_a0 {
                 gap: $border-width;
 
                 // Item
-                .item__48dda {
+                .item_a0 {
                     margin: 0;
 
-                    &.themed_b957e8 {
+                    &.themed_a0 {
                         // Selected or hovered
-                        &:is(.selected_a523ff, :hover:not(.disabled__2717e), :active) {
+                        &:is(.selected_a0, :hover:not(.disabled_a0), :active) {
                             background: $text;
                             color: $white;
                         }
                     }
 
-                    @at-root .premiumLabel__68f78 {
+                    @at-root .premiumLabel_ae3c77 {
                         path {
                             fill: currentColor;
                         }
@@ -47,19 +47,19 @@
                 }
 
                 // Divider
-                .separator_d14fb1 {
+                .separator_a0 {
                     height: 2px;
                     background: $grey;
                 }
 
                 // Social media links
-                @at-root .socialLinks_dbdd6f {
+                @at-root .socialLinks_c44e94 {
                     display: flex;
                     gap: $border-width;
                     justify-content: center;
 
                     // Link
-                    @at-root .link_cebd7b {
+                    @at-root .link_c44e94 {
                         display: block;
                         padding: $gap-width;
                         margin-right: 0;
@@ -69,7 +69,7 @@
                             background: $text;
                         }
 
-                        @at-root .foreground__635e9 {
+                        @at-root .foreground_c44e94 {
                             transition: none;
                         }
                     }
@@ -78,12 +78,12 @@
         }
 
         // Right side
-        @at-root .contentRegion__08eba {
+        @at-root .contentRegion_c25c6d {
             // Controls
-            .toolsContainer__4e6ad {
+            .toolsContainer_c25c6d {
                 // Exit settings
-                @at-root .container__3529f {
-                    @at-root .closeButton__8177f {
+                @at-root .container_df5532 {
+                    @at-root .closeButton_df5532 {
                         --interactive-hover: #{$white};
                         --interactive-active: #{$white};
 
@@ -98,19 +98,19 @@
 
             // Settings content
             // Divider
-            .divider__14bb6 {
+            .divider_b03b7f {
                 border: 1px solid $grey;
             }
 
             // Tab bar
-            @at-root .top_fae1fa {
+            @at-root .top_a0 {
                 border: $border-width solid $black;
                 background: $black;
                 justify-content: space-around;
                 gap: $border-width;
                 padding: 0;
 
-                .item__48dda {
+                .item_a0 {
                     flex: 1 0 auto;
                     display: flex;
                     justify-content: center;
@@ -121,7 +121,7 @@
                     padding: 0;
                     height: 36px;
 
-                    &:is(:hover, :active, .selected_a523ff) {
+                    &:is(:hover, :active, .selected_a0) {
                         background: $white;
                         color: $black;
                         border-bottom: 0;

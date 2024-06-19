@@ -3,13 +3,13 @@
 
 // Radio bar with long description
 // Radio item
-.item_b7fb7e {
+.item_eb92a8 {
     --interactive-hover: #{$white};
     --interactive-active: #{$white};
     --background-modifier-hover: #{$text};
     @include raise;
 
-    @at-root .radioBar__70669 {
+    @at-root .radioBar_eb92a8 {
         border-left-width: $gap-width;
     }
 }

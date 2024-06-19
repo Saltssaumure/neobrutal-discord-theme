@@ -1,7 +1,7 @@
 @use "../../vars" as *;
 
 // Search
-.container__84c26 {
+.container_eedf95 {
     --search-popout-option-fade: linear-gradient(90deg, transparent, #{$whitest});
     --search-popout-option-fade-hover: linear-gradient(90deg, transparent, #{$text});
 
@@ -14,7 +14,7 @@
     --deprecated-text-input-border-disabled: none;
 
     // Search for
-    .queryContainer_c1cb2f {
+    .queryContainer_eedf95 {
         background: inherit;
         color: $text;
         border-bottom: none;
@@ -25,18 +25,18 @@
     }
 
     // Results group
-    @at-root .resultsGroup_b221b0 {
+    @at-root .resultsGroup_b0286e {
         &::before {
             border: none;
         }
 
         // Title
-        .header__00739 {
+        .header_b0286e {
         }
     }
 
     // Search options
-    @at-root .option__91497 {
+    @at-root .option_b0286e {
         --background-modifier-hover: #{$text};
         --background-modifier-active: #{$text};
         --background-modifier-selected: #{$text};
@@ -47,14 +47,14 @@
 
         &:hover {
             // User nickname, user username, other non-text(?)
-            :is(.displayedNick_ee206c, .displayUsername__41697, .nonText_fbd88d) {
+            :is(.displayedNick_b0286e, .displayUsername_b0286e, .nonText_b0286e) {
                 color: #{$white};
             }
         }
     }
 
     // Datepicker
-    @at-root .datePicker_df63a7 {
+    @at-root .datePicker_b0286e {
         // Calendar
         .calendarPicker__47c85 {
             .react-datepicker {
@@ -135,7 +135,7 @@
         }
 
         // Datepicker hint
-        @at-root .datePickerHint_d023b6 {
+        @at-root .datePickerHint_b0286e {
             border-top: none;
         }
     }

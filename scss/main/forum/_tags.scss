@@ -1,12 +1,12 @@
 @use "../../vars" as *;
 
-.pill_f055c3.pill_f055c3:not(.disabled_fbfabf) {
+.pill_c993da.pill_c993da:not(.disabled_c993da) {
     &,
     &:hover {
         background: $black;
         --text-normal: #{$white};
     }
-    &.selected__50db4 {
+    &.selected_c993da {
         background: $white;
         --text-normal: #{$black};
     }

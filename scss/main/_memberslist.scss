@@ -1,17 +1,17 @@
 @use "../vars" as *;
 
 // Members list
-.container_f79ab4 {
-    @at-root .membersWrap__5ca6b {
-        @at-root .members__573eb {
-            @at-root .content__690c5 {
+.container_cbd271 {
+    @at-root .membersWrap_cbd271 {
+        @at-root .members_cbd271 {
+            @at-root .content_eed6a8 {
                 // Member
-                @at-root .member_b44d5d {
+                @at-root .member_cbd271 {
                     --interactive-hover: #{$white};
 
                     // User activity or status
-                    @at-root .activityText__31c22,
-                        .icon__1ab4f {
+                    @at-root .activityText_a31c43,
+                        .icon_ad923e {
                         color: $text-muted;
                     }
                 }

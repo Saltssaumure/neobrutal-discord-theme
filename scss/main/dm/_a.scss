@@ -3,28 +3,28 @@
 // DMs page
 
 // Sidebar channels
-.container__3792d {
+.container_b15955 {
     --interactive-active: #{$white};
     --interactive-hover: #{$white};
 }
 
 // Tab bars
-.topPill__63ad4 {
+.topPill_a0 {
     gap: $border-width;
 
     // Tab
-    .item__48dda {
+    .item_a0 {
         margin: 0;
 
-        &.themed_b957e8 {
+        &.themed_a0 {
             // Selected or hovered
-            &:is(.selected_a523ff, :hover:not(.disabled__2717e), :active) {
+            &:is(.selected_a0, :hover:not(.disabled_a0), :active) {
                 background: $white;
                 color: $black;
             }
             // Friend
-            &.addFriend__4c0a2,
-            &.addFriend__4c0a2:is(:hover, :active) {
+            &.addFriend_c2739c,
+            &.addFriend_c2739c:is(:hover, :active) {
                 background: $accent;
                 color: $white;
             }
@@ -33,8 +33,8 @@
 }
 
 // Header shadow
-.tabBody_a90ea8,
-.headerBar__3337a {
+.tabBody_c2739c,
+.headerBar_d175a8 {
     &::before {
         display: none;
     }

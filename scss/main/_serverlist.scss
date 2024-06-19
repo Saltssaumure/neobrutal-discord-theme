@@ -1,14 +1,14 @@
 @use "../vars" as *;
 
 // Server list
-.wrapper__216eb {
+.wrapper_fea3ef {
     background: none;
     justify-content: flex-end;
     width: $serverlist-width;
 
     --custom-list-items-list-item-width: #{$serverlist-width};
 
-    @at-root .tree__7a511 {
+    @at-root .tree_fea3ef {
         height: calc(100% - $serverlist-width);
         background: $black;
         box-sizing: border-box;
@@ -17,25 +17,25 @@
         --green-360: #{$black};
 
         // Scroller
-        @at-root .scroller_de945b {
+        @at-root .scroller_fea3ef {
             :is(.platform-win, .platform-osx) & {
                 padding-top: 0;
             }
 
             // DMs (Discord icon)
-            @at-root .tutorialContainer_b06ae6 {
+            @at-root .tutorialContainer_f9623d {
                 position: fixed;
                 top: 0;
                 left: 0;
                 background: $black;
 
                 // Icon / pill wrapper
-                .listItem__48528 {
+                .listItem_c96c45 {
                     width: $serverlist-width;
                     height: $serverlist-width;
 
                     // Icon outmost wrapper
-                    .listItemWrapper__3d465 {
+                    .listItemWrapper_dfb2f8 {
                         display: flex;
                         align-items: center;
 
@@ -60,12 +60,12 @@
             }
 
             // Hide DMs and servers separator if no DMs
-            @at-root .tutorialContainer_b06ae6 + .listItem__48528:has(.guildSeparator__75928) {
+            @at-root .tutorialContainer_f9623d + .listItem_c96c45:has(.guildSeparator_d0c57e) {
                 display: none;
             }
 
             // Ping counter
-            .lowerBadge_e89e22 {
+            .lowerBadge_c5f96a {
                 --status-danger: #{$accent};
                 // writing-mode: vertical-lr;
                 // top: 0;
@@ -79,9 +79,9 @@
             }
 
             // Server
-            @at-root .listItem__48528 {
-                @at-root .pill__6b31b {
-                    @at-root .item_f9d377 {
+            @at-root .listItem_c96c45 {
+                @at-root .pill_a5ad63 {
+                    @at-root .item_fd07a3 {
                         background: $accent;
                         margin-left: 0;
                     }
@@ -89,13 +89,13 @@
             }
 
             // Server group container
-            @at-root .wrapper__832f2 {
+            @at-root .wrapper_bc7085 {
                 width: $serverlist-width;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
-                .expandedFolderBackground_b1385f {
+                .expandedFolderBackground_bc7085 {
                     left: calc(($serverlist-width - 48px) / 2);
                 }
             }

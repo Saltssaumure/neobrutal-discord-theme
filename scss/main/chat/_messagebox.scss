@@ -1,14 +1,14 @@
 @use "../../vars" as *;
 
 // Message box
-.form_d8a4a1 {
+.form_a7d72e {
     &::before,
     &::after {
         display: none;
     }
 
-    > .channelTextArea_c2094b {
-        .themedBackground__3a4c0 {
+    > .channelTextArea_a7d72e {
+        .themedBackground_d0696b {
             background: $black;
             border: $border-width solid $black;
             --interactive-normal: #{$white};
@@ -16,22 +16,22 @@
             --interactive-active: #{$white};
 
             // Upload button
-            .attachButton__5f6dc {
+            .attachButton_d0696b {
             }
 
             // Text area
-            .textArea_a86690 {
+            .textArea_d0696b {
                 background: $white;
                 border: solid $black;
                 border-width: 0 $border-width;
 
-                .slateTextArea_b19976 {
+                .slateTextArea_e52116 {
                     padding: 8px;
                 }
             }
 
             // Right side buttons
-            .buttons__7ecff {
+            .buttons_d0696b {
             }
         }
     }

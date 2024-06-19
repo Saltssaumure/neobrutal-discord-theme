@@ -1,8 +1,8 @@
 @use "../../vars" as *;
 
 // Post card
-.card__691f2 {
-    .container_de2a56 {
+.card_a6d69a {
+    .container_d331f1 {
         transition:
             box-shadow 0.2s ease-out,
             transform 0.2s ease-out;
@@ -10,61 +10,61 @@
         --header-secondary: #{$text};
         --text-normal: #{$text};
 
-        :is(&, &:hover, &.isOpen__8593d) {
+        :is(&, &:hover, &.isOpen_d331f1) {
             border: 0;
             border-left: $gap-width solid $text;
         }
 
         // Currently open post
-        :is(&.isOpen__8593d, &:hover, &:active) {
+        :is(&.isOpen_d331f1, &:hover, &:active) {
             background: $text;
             --header-primary: #{$white};
             --header-secondary: #{$white};
             --text-normal: #{$white};
 
             // Post tags
-            .tags_e6c42a {
-                .pill_f055c3 {
+            .tags_f451cd {
+                .pill_c993da {
                     background: $white;
                     --text-normal: #{$text};
                 }
             }
 
             // Post reaction
-            .reaction_ef7e09 {
+            .reaction_f61c73 {
                 background: $text;
 
-                &.reactionMe__9fc5c {
+                &.reactionMe_f61c73 {
                     background: $white;
                     border: none;
                 }
 
-                .reactionCount_b780c8 {
+                .reactionCount_f61c73 {
                     color: $text;
                 }
             }
         }
 
         // Post info
-        @at-root .body_dd9e3d {
+        @at-root .body_d331f1 {
             // Post title
-            @at-root .header_ff52a5 {
+            @at-root .header_d331f1 {
                 order: -1;
             }
         }
 
         // Post footer
-        @at-root .footer_feccc4 {
+        @at-root .footer_d331f1 {
             gap: $gap-width * 2;
 
             // Post reaction
-            .reaction_ef7e09 {
+            .reaction_f61c73 {
                 transition-property: none;
                 margin-right: 0;
             }
 
             // Divider
-            @at-root .bullet__4f67e {
+            @at-root .bullet_d331f1 {
                 display: none;
             }
 

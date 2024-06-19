@@ -1,14 +1,14 @@
 @use "../vars" as *;
 
 // User control panel
-.panels__58331 {
+.panels_a4d4d9 {
     --background-modifier-selected: #{$text};
     --interactive-hover: #{$white};
 
     // Square buttons
-    .button_ae40a4 {
-        &.enabled__214db:hover {
-            .lottieIcon_c7076c :not(defs *) {
+    .button_f67531 {
+        &.enabled_f67531:hover {
+            .lottieIcon_f73ef7 :not(defs *) {
                 &[fill][fill-opacity] {
                     fill: $white;
                 }
@@ -20,18 +20,18 @@
     }
 
     // Current activity
-    @at-root .activityPanel_b73e7a {
+    @at-root .activityPanel_a4d4d9 {
         border-bottom: none;
     }
 
     // Voice activity
-    @at-root .wrapper_e832ee {
-        @at-root .container_e1958d {
+    @at-root .wrapper_adcaac {
+        @at-root .container_adcaac {
             border-bottom: none;
 
-            @at-root .actionButtons__85e3c.actionButtons__85e3c {
-                .button_b82d53 .buttonColor__7bad9,
-                .button_b82d53.buttonColor__7bad9 {
+            @at-root .actionButtons_adcaac.actionButtons_adcaac {
+                .button_adcaac .buttonColor_adcaac,
+                .button_adcaac.buttonColor_adcaac {
                     background: $white;
                     color: $text;
 
@@ -46,10 +46,10 @@
     }
 
     // User panel
-    @at-root .container_debb33 {
+    @at-root .container_b2ca13 {
         // User info
-        @at-root .withTagAsButton_e22174:hover,
-            .withTagless__058f8:hover {
+        @at-root .withTagAsButton_b2ca13:hover,
+            .withTagless_b2ca13:hover {
             --header-primary: #{$white};
             --header-secondary: #{$white};
         }
