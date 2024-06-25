@@ -7,31 +7,100 @@
         display: none;
     }
 
-    > .channelTextArea_a7d72e {
+    > .channelTextAreaContainer_d0696b > .channelTextArea_a7d72e {
+        // Chat box including buttons
         .themedBackground_d0696b {
             background: $black;
             border: $border-width solid $black;
-            --interactive-normal: #{$white};
-            --interactive-hover: #{$white};
-            --interactive-active: #{$white};
 
-            // Upload button
-            .attachButton_d0696b {
+            .inner_d0696b {
+                --interactive-normal: #{$white};
+                --interactive-hover: #{$white};
+                --interactive-active: #{$white};
+
+                // Upload button
+                .attachButton_d0696b {
+                }
+
+                // Text area
+                .textArea_d0696b {
+                    background: $white;
+                    border: solid $black;
+                    border-width: 0 $border-width;
+
+                    .slateTextArea_e52116 {
+                        padding: 8px;
+                    }
+                }
+
+                // Right side buttons
+                .buttons_d0696b {
+                }
+
+                // Separator
+                @at-root .separator_a06035 {
+                    &::before {
+                        display: none;
+                    }
+
+                    // Send button
+                    .button_a06035:is(:hover, :focus, :focus-within) {
+                        .activeButtonChild_a06035 {
+                            color: $accent;
+                        }
+                    }
+                }
             }
+        }
 
-            // Text area
-            .textArea_d0696b {
-                background: $white;
-                border: solid $black;
-                border-width: 0 $border-width;
+        // Autocomplete for commands etc.
+        @at-root .autocomplete_f23da8 {
+            // Sidebar
+            @at-root .wrapper_efd8e6,
+                .wrapper_ba23fe {
+                background: transparent;
 
-                .slateTextArea_e52116 {
-                    padding: 8px;
+                // Server category...?
+                .section_efd8e6 {
+                    width: 32px;
+                }
+
+                // Default category icon
+                .selected_c9d951,
+                .selected_c9d951:hover {
+                    background: var(--background-modifier-selected);
+                }
+                .selected_c9d951,
+                .selected_c9d951:hover,
+                .selectable_c9d951:hover {
+                    .icon_c9d951 {
+                        color: $white;
+                    }
                 }
             }
 
-            // Right side buttons
-            .buttons_d0696b {
+            // Main suggestions
+            @at-root .wrapper_fe2299 {
+                // Suggestion category
+                @at-root .categorySection_fe2299 {
+                    // Category header
+                    @at-root .categoryHeader_fe2299 {
+                    }
+
+                    // Category row
+                    @at-root .autocompleteRow_f23da8.clickable_f23da8 {
+                        &[aria-disabled="false"] > .base_f23da8:hover,
+                        &[aria-selected="true"] > .base_f23da8 {
+                            --interactive-normal: #{$white};
+                            --interactive-active: #{$white};
+                        }
+
+                        // Optional args
+                        @at-root .optionals_e18e73 {
+                            border-left: none;
+                        }
+                    }
+                }
             }
         }
     }

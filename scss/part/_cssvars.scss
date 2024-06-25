@@ -7,23 +7,24 @@
     --background-secondary: #{$white};
     --background-tertiary: #{$white};
     --background-secondary-alt: #{$white};
-    --background-floating: #{$whitest};
     --background-accent: #{$accent};
 
     --background-modifier-hover: #{$text};
     --background-modifier-active: #{$text};
     --background-modifier-selected: #{$text};
 
-    --modal-background: #{$white};
+    --modal-background: var(--background-floating);
     --modal-footer-background: #{$white};
     --activity-card-background: #{$white};
     --input-background: #{$white};
     --deprecated-store-bg: #{$white};
+    --autocomplete-bg: var(--background-floating);
 
     // Text
     --text-normal: #{$text};
     --text-muted: #{$text-muted};
     --text-positive: #{$text};
+    --text-brand: #{$accent};
     --header-primary: #{$text};
     --header-secondary: #{$text};
     --embed-title: #{$text};
@@ -56,4 +57,12 @@
     --scrollbar-thin-thumb: #{$accent};
     --scrollbar-auto-track: #{$grey};
     --scrollbar-thin-track: #{$grey};
+}
+
+.theme-light {
+    --background-floating: #{mixSrgb($white, white)};
+}
+
+.theme-dark {
+    --background-floating: #{mixSrgb($white, black)};
 }

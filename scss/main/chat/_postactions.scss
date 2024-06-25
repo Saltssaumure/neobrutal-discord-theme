@@ -8,8 +8,13 @@
 
             // Action
             @at-root .button_ef319f {
-                --interactive-hover: #{$whitest};
-                --interactive-active: #{$whitest};
+                --interactive-hover: var(--background-floating);
+                --interactive-active: var(--background-floating);
+
+                &.dangerous_ef319f:hover {
+                    background: var(--status-danger);
+                    color: var(--background-floating);
+                }
             }
         }
     }

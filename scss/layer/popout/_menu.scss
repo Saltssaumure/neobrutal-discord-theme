@@ -2,8 +2,6 @@
 
 // Menu
 .menu_d90b3d {
-    background: var(--background-floating);
-
     // Group separator
     @at-root .separator_d90b3d {
         border-bottom: none;
@@ -42,7 +40,7 @@
         }
 
         path {
-            fill: $whitest;
+            fill: var(--background-floating);
         }
     }
 

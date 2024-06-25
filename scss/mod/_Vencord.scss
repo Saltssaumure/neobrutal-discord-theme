@@ -17,7 +17,7 @@
 .vc-notification-container {
     // Notification card
     @at-root .vc-notification-root {
-        background: $whitest;
+        background: var(--background-floating);
         box-shadow: var(--elevation-high);
     }
 }
