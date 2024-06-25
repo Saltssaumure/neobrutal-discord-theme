@@ -13,7 +13,7 @@
     --background-modifier-active: #{$text};
     --background-modifier-selected: #{$text};
 
-    --modal-background: #{$white};
+    --modal-background: var(--background-floating);
     --modal-footer-background: #{$white};
     --activity-card-background: #{$white};
     --input-background: #{$white};

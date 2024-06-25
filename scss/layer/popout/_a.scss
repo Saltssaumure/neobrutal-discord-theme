@@ -5,3 +5,27 @@
 .messagesPopoutWrap_ac90a2 {
     max-height: calc(100vh - 84px) !important;
 }
+
+// Recolour popouts
+// Emoji picker
+.contentWrapper_af5dbb,
+// Profiles
+.userProfileInnerThemedNonPremium_c69a7b,
+// Threads
+.container_e664f3,
+// Inbox
+.messagesPopoutWrap_ac90a2,
+.container_f8a938 {
+    background: var(--background-floating);
+}
+
+// Inbox
+// Channel header
+.channelHeader_f3978e {
+    background: var(--background-floating);
+}
+// Body
+.container_fe1358,
+.scroller_f1c3d9 {
+    background: var(--background-floating);
+}
