@@ -4,11 +4,11 @@
 // Menu items
 .option_f6639d {
     &[aria-selected="true"]:not(.option_f6639d.multi_f6639d) {
-        color: $whitest;
+        color: var(--background-floating);
         background: $text;
 
         .selectedIcon_f6639d {
-            color: $whitest;
+            color: var(--background-floating);
 
             circle {
                 fill: $text;

@@ -8,8 +8,8 @@
 
             // Action
             @at-root .button_ef319f {
-                --interactive-hover: #{$whitest};
-                --interactive-active: #{$whitest};
+                --interactive-hover: var(--background-floating);
+                --interactive-active: var(--background-floating);
             }
         }
     }

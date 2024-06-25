@@ -7,7 +7,6 @@
     --background-secondary: #{$white};
     --background-tertiary: #{$white};
     --background-secondary-alt: #{$white};
-    --background-floating: #{$whitest};
     --background-accent: #{$accent};
 
     --background-modifier-hover: #{$text};
@@ -57,4 +56,12 @@
     --scrollbar-thin-thumb: #{$accent};
     --scrollbar-auto-track: #{$grey};
     --scrollbar-thin-track: #{$grey};
+}
+
+.theme-light {
+    --background-floating: #{mixSrgb($white, white)};
+}
+
+.theme-dark {
+    --background-floating: #{mixSrgb($white, black)};
 }

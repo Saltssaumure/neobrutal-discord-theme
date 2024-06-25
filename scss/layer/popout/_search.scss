@@ -2,7 +2,7 @@
 
 // Search
 .container_eedf95 {
-    --search-popout-option-fade: linear-gradient(90deg, transparent, #{$whitest});
+    --search-popout-option-fade: linear-gradient(90deg, transparent, var(--background-floating));
     --search-popout-option-fade-hover: linear-gradient(90deg, transparent, #{$text});
 
     --search-popout-option-non-text-color: #{$text};
