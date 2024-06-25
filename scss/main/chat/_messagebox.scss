@@ -7,7 +7,7 @@
         display: none;
     }
 
-    > .channelTextArea_a7d72e {
+    > .channelTextAreaContainer_d0696b > .channelTextArea_a7d72e {
         .themedBackground_d0696b {
             background: $black;
             border: $border-width solid $black;
@@ -32,6 +32,20 @@
 
             // Right side buttons
             .buttons_d0696b {
+            }
+
+            // Separator
+            @at-root .separator_a06035 {
+                &::before {
+                    display: none;
+                }
+
+                // Send button
+                .button_a06035:is(:hover, :focus, :focus-within) {
+                    .activeButtonChild_a06035 {
+                        color: $accent;
+                    }
+                }
             }
         }
     }
