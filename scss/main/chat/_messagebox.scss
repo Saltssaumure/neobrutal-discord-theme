@@ -12,39 +12,42 @@
         .themedBackground_d0696b {
             background: $black;
             border: $border-width solid $black;
-            --interactive-normal: #{$white};
-            --interactive-hover: #{$white};
-            --interactive-active: #{$white};
 
-            // Upload button
-            .attachButton_d0696b {
-            }
+            .inner_d0696b {
+                --interactive-normal: #{$white};
+                --interactive-hover: #{$white};
+                --interactive-active: #{$white};
 
-            // Text area
-            .textArea_d0696b {
-                background: $white;
-                border: solid $black;
-                border-width: 0 $border-width;
-
-                .slateTextArea_e52116 {
-                    padding: 8px;
-                }
-            }
-
-            // Right side buttons
-            .buttons_d0696b {
-            }
-
-            // Separator
-            @at-root .separator_a06035 {
-                &::before {
-                    display: none;
+                // Upload button
+                .attachButton_d0696b {
                 }
 
-                // Send button
-                .button_a06035:is(:hover, :focus, :focus-within) {
-                    .activeButtonChild_a06035 {
-                        color: $accent;
+                // Text area
+                .textArea_d0696b {
+                    background: $white;
+                    border: solid $black;
+                    border-width: 0 $border-width;
+
+                    .slateTextArea_e52116 {
+                        padding: 8px;
+                    }
+                }
+
+                // Right side buttons
+                .buttons_d0696b {
+                }
+
+                // Separator
+                @at-root .separator_a06035 {
+                    &::before {
+                        display: none;
+                    }
+
+                    // Send button
+                    .button_a06035:is(:hover, :focus, :focus-within) {
+                        .activeButtonChild_a06035 {
+                            color: $accent;
+                        }
                     }
                 }
             }
