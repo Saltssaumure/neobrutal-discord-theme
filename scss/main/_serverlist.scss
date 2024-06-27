@@ -16,6 +16,12 @@
         align-items: center;
         --green-360: #{$black};
 
+        // Mentions mini banner
+        @at-root .unreadMentionsIndicatorTop_fea3ef,
+            .unreadMentionsIndicatorBottom_fea3ef {
+            width: $serverlist-width;
+        }
+
         // Scroller
         @at-root .scroller_fea3ef {
             :is(.platform-win, .platform-osx) & {

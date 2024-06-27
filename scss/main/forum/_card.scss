@@ -1,77 +1,93 @@
 @use "../../vars" as *;
 
 // Post card
-.card_a6d69a {
-    .container_d331f1 {
-        transition:
-            box-shadow 0.2s ease-out,
-            transform 0.2s ease-out;
-        --header-primary: #{$text};
-        --header-secondary: #{$text};
-        --text-normal: #{$text};
+.mainCard_a6d69a:not(.header_a6d69a) {
+    transition: all 0.2s ease-out;
+    background: $white;
+    --header-primary: #{$text};
+    --header-secondary: #{$text};
+    --text-normal: #{$text};
 
-        :is(&, &:hover, &.isOpen_d331f1) {
-            border: 0;
-            border-left: $gap-width solid $text;
+    :is(&, &:hover, &.isOpen_d331f1) {
+        border: 0;
+        border-left: $gap-width solid;
+
+        // Read post
+        &:where(:has(.defaultColor_e9e35f[style*="--text-muted"])) {
+            border-left-color: $text-muted;
+        }
+        // Unread post
+        &:has(.defaultColor_e9e35f[style*="--header-primary"]) {
+            border-left-color: $text;
+        }
+    }
+
+    // Currently open post
+    :is(&.isOpen_d331f1, &.isOpen_a57509, &:hover, &:active) {
+        background: $text;
+        border-left-color: $text;
+        --header-primary: #{$white};
+        --header-secondary: #{$white};
+        --text-normal: #{$white};
+        --text-muted: #{$white};
+        --text-brand: #{$white};
+        --interactive-normal: #{$white};
+        --interactive-muted: #{$white};
+
+        // Post tags
+        .tags_f451cd {
+            .pill_c993da {
+                background: $white;
+                --text-normal: #{$text};
+            }
         }
 
-        // Currently open post
-        :is(&.isOpen_d331f1, &:hover, &:active) {
+        // Post reaction
+        .reaction_f61c73 {
             background: $text;
-            --header-primary: #{$white};
-            --header-secondary: #{$white};
-            --text-normal: #{$white};
 
-            // Post tags
-            .tags_f451cd {
-                .pill_c993da {
-                    background: $white;
-                    --text-normal: #{$text};
-                }
+            &.reactionMe_f61c73 {
+                background: $white;
+                border: none;
             }
 
-            // Post reaction
-            .reaction_f61c73 {
-                background: $text;
-
-                &.reactionMe_f61c73 {
-                    background: $white;
-                    border: none;
-                }
-
-                .reactionCount_f61c73 {
-                    color: $text;
-                }
-            }
-        }
-
-        // Post info
-        @at-root .body_d331f1 {
-            // Post title
-            @at-root .header_d331f1 {
-                order: -1;
-            }
-        }
-
-        // Post footer
-        @at-root .footer_d331f1 {
-            gap: $gap-width * 2;
-
-            // Post reaction
-            .reaction_f61c73 {
-                transition-property: none;
-                margin-right: 0;
-            }
-
-            // Divider
-            @at-root .bullet_d331f1 {
-                display: none;
-            }
-
-            // Created at
-            .text-sm-normal__95a78 {
-                margin-top: 2px;
+            .reactionCount_f61c73 {
+                color: $text;
             }
         }
     }
+
+    // Post info
+    @at-root .body_d331f1 {
+        // Post title
+        @at-root .header_d331f1 {
+            order: -1;
+        }
+    }
+
+    // Post footer
+    @at-root .footer_d331f1 {
+        gap: $gap-width * 2;
+
+        // Post reaction
+        .reaction_f61c73 {
+            transition-property: none;
+            margin-right: 0;
+        }
+
+        // Divider
+        @at-root .bullet_d331f1 {
+            display: none;
+        }
+
+        // Created at
+        .text-sm-normal__95a78 {
+            margin-top: 2px;
+        }
+    }
+}
+
+//
+.container_a57509 {
+    border: none;
 }
