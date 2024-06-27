@@ -85,10 +85,40 @@
                             background: $black;
                             padding: 0;
                             border: $border-width solid $black;
+                            height: calc(10px + var(--custom-forum-composer-attachments-attachment-size) + 24px);
+                            &::-webkit-scrollbar {
+                                width: 0;
+                                height: 0;
+                            }
+
+                            // Small attachments
+                            @at-root .imageSmall_f847a3 {
+                                // Non-image attachments
+                                &.icon_f847a3 {
+                                    background-size: 60%;
+                                }
+
+                                .spoilerWarning_a3d0f7 {
+                                    zoom: 0.7;
+                                }
+                            }
 
                             // File upload options menu
-                            .miniPopover_df1eaf {
-                                height: auto;
+                            .actionBarContainer_df1eaf {
+                                top: unset;
+                                bottom: 0;
+
+                                .smallActionBar_df1eaf {
+                                    transform: none;
+                                    opacity: 1;
+
+                                    .miniPopover_df1eaf {
+                                        height: auto;
+                                        &:hover {
+                                            box-shadow: none;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -106,6 +136,19 @@
                     display: none;
                 }
             }
+        }
+    }
+
+    // Search results info
+    @at-root .matchingPostsRow_a6d69a {
+        background: $black;
+        --text-normal: #{$white};
+
+        .key_c90023 {
+            color: $white;
+            border-color: $white;
+            box-shadow: inset 0 -4px 0 $white;
+            background: $black;
         }
     }
 
