@@ -5,22 +5,34 @@
     .container_d331f1 {
         transition:
             box-shadow 0.2s ease-out,
-            transform 0.2s ease-out;
+            transform 0.2s ease-out background 0.2s ease-out;
+        background: $white;
         --header-primary: #{$text};
         --header-secondary: #{$text};
         --text-normal: #{$text};
 
         :is(&, &:hover, &.isOpen_d331f1) {
             border: 0;
-            border-left: $gap-width solid $text;
+            border-left: $gap-width solid;
+
+            // Read post
+            &:where(:has(.postTitleText_d331f1[style*="--text-muted"])) {
+                border-left-color: $text-muted;
+            }
+            // Unread post
+            &:has(.postTitleText_d331f1[style*="--header-primary"]) {
+                border-left-color: $text;
+            }
         }
 
         // Currently open post
         :is(&.isOpen_d331f1, &:hover, &:active) {
             background: $text;
+            border-left-color: $text;
             --header-primary: #{$white};
             --header-secondary: #{$white};
             --text-normal: #{$white};
+            --text-muted: #{$white};
 
             // Post tags
             .tags_f451cd {
